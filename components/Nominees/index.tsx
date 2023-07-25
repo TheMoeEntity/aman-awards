@@ -1,5 +1,5 @@
 "use client";
-import { nominees, noms, titles } from "@/Helpers";
+import { nominees, noms, noms4, noms5, titles } from "@/Helpers";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useState } from "react";
@@ -10,6 +10,8 @@ import sare from "../../public/images/sare.jpeg";
 import concert from "../../public/images/concert.jpeg";
 import taylor from "../../public/images/taylor.webp";
 import land from "../../public/images/land.png";
+import { noms3 } from "@/Helpers";
+
 const Timer = dynamic(() => import("./Timer"));
 const noms2: noms[] = [
   {
@@ -56,7 +58,26 @@ const Nominees = () => {
   const [assets, setAssets] = useState<nominees[]>(titles);
   const [cards, setCards] = useState<noms[]>(noms1);
   const titleAction = (id: number, name: string) => {
-    name === "PROMOTER OF THE YEAR" ? setCards(noms2) : setCards(noms1);
+    // name === "PROMOTER OF THE YEAR" ? setCards(noms2) : setCards(noms1);
+    switch (name) {
+      case "ALL":
+        setCards(noms1);
+        break;
+      case "PROMOTER OF THE YEAR":
+        setCards(noms2);
+        break;
+      case "ARTIST MANAGER OF THE YEAR":
+        setCards(noms3);
+        break;
+      case "PHOTOGRAPHER OF THE YEAR":
+        setCards(noms4);
+        break;
+      case "VIDEOGRAPHER OF THE YEAR":
+        setCards(noms5);
+        break;
+      default:
+        break;
+    }
     setAssets((x) => {
       const newAssets = x.map((x) =>
         x.id == id

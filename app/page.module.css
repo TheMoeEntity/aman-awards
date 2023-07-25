@@ -279,7 +279,7 @@
   width: 100%;
   padding: 50px 60px;
   background-color: var(--brown2);
-  padding-bottom: 80px;
+  padding-bottom: 30px;
   height: auto;
 }
 .aboutaman .grids {
@@ -543,11 +543,11 @@
   .latest .grid > div {
     min-width: 250.5px;
     margin: 15px 12px;
-    height: 440px;
+    height: 290px;
     padding: 10px 20px;
   }
   .latest .grid .video {
-    height: 70%;
+    height: 60%;
   }
 }
 @media screen and (max-width: 650px) {
@@ -592,7 +592,7 @@
 }
 @media screen and (max-width: 450px) {
   .latest .grid > div {
-    height: 350px;
+    height: 310px;
   }
   .concerts {
     width: 100%;
@@ -639,5 +639,10 @@
   }
   .aboutaman p {
     padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .latest .grid > div {
+    height: 270px;
   }
 }
