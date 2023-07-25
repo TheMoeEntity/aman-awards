@@ -8,9 +8,30 @@ import moe from "../../public/images/asika.jpeg";
 import bose from "../../public/images/bose.webp";
 import sare from "../../public/images/sare.jpeg";
 import concert from "../../public/images/concert.jpeg";
+import taylor from "../../public/images/taylor.webp";
+import land from "../../public/images/land.png";
 const Timer = dynamic(() => import("./Timer"));
-
-const noms: noms[] = [
+const noms2: noms[] = [
+  {
+    title: "Moses Nwigberi",
+    image: concert,
+    artist: "Record Label 1 (Wizkid)",
+    id: Math.random() * 10000,
+  },
+  {
+    title: "Asa Asika",
+    id: Math.random() * 10000,
+    image: land,
+    artist: "Record Label 2 (Wizkid)",
+  },
+  {
+    title: "Bose Ogulu",
+    id: Math.random() * 10000,
+    image: taylor,
+    artist: "Record Label 3 (Wizkid)",
+  },
+];
+const noms1: noms[] = [
   {
     title: "Sunday Are",
     image: sare,
@@ -30,18 +51,38 @@ const noms: noms[] = [
     artist: "Spaceship Collective (Burna)",
   },
 ];
+
 const Nominees = () => {
   const [assets, setAssets] = useState<nominees[]>(titles);
+  const [cards, setCards] = useState<noms[]>(noms1);
+  const titleAction = (id: number, name: string) => {
+    name === "PROMOTER OF THE YEAR" ? setCards(noms2) : setCards(noms1);
+    setAssets((x) => {
+      const newAssets = x.map((x) =>
+        x.id == id
+          ? {
+              ...x,
+              isActive: true,
+            }
+          : {
+              ...x,
+              isActive: false,
+            }
+      );
+      return newAssets;
+    });
+  };
   return (
     <div className={styles.nominees}>
-      {/* <div className={styles.timer}>
+      <div className={styles.timer}>
         <Timer />
-      </div> */}
+      </div>
 
       <h2>NOMINEES</h2>
       <div className={styles.bar}>
         {assets.map((x) => (
           <div
+            onClick={() => titleAction(x.id, x.title)}
             style={{ background: x.isActive ? "var(--brown)" : "initial" }}
             key={x.id}
           >
@@ -50,7 +91,7 @@ const Nominees = () => {
         ))}
       </div>
       <div className={styles.nomCards}>
-        {noms.map((x) => (
+        {cards.map((x) => (
           <div key={x.id}>
             <div className={styles.img}>
               <Image
