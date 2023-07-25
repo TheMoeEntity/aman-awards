@@ -82,7 +82,8 @@ const Header = () => {
         <i className="fa-solid fa-bars"></i>
       </div>
       <div className={styles.logo}>
-        <Link href={"/"}>
+        <h2>AMAN AWARDS</h2>
+        {/* <Link href={"/"}>
           <Image
             src={pepnops}
             alt="card-image"
@@ -91,16 +92,16 @@ const Header = () => {
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-        </Link>
+        </Link> */}
       </div>
-      <div>
+      {/* <div>
         <ul>
           <li onClick={() => router.push("/")}>Home</li>
           <li onClick={() => router.push("#solutions")}>Solutions</li>
           <li onClick={() => router.push("/about")}>Who we are</li>
           <li onClick={() => router.push("/contact")}>{`Let's Talk`}</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

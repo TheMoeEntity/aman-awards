@@ -7,6 +7,7 @@ import nigga from "../../public/images/nigga.jpeg";
 const Latest = () => {
   return (
     <div className={styles.latest}>
+      <h2>LATEST NEWS</h2>
       <div className={styles.grid}>
         {[...Array(6)].map((_x, i) => (
           <div key={i}>
