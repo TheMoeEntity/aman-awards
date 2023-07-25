@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Nominees } from "@/components/Nominees";
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Nominees />
       <Latest />
+      <Footer />
     </main>
   );
 }
