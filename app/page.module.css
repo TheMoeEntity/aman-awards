@@ -183,7 +183,6 @@
   padding: 20px 10px;
   font-weight: bolder;
   background-color: white;
-
   margin-top: 40px;
 }
 .nominees > h2 {
@@ -193,17 +192,18 @@
 .bar {
   width: fit-content;
   height: auto;
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
   flex-flow: row wrap;
+  padding: 0 25px;
   justify-content: space-between;
 }
 .bar > div {
   width: fit-content;
   height: fit-content;
-  padding: 10px 25px;
+  padding: 10px 20px;
   border: 1px solid var(--brown);
-  font-size: small;
+  font-size: x-small;
   text-align: center;
   border-radius: 25px;
   font-weight: 300;
@@ -328,6 +328,94 @@
   margin-top: 30px;
   text-align: justify;
   color: var(--aman-title);
+}
+.latest {
+  width: 100%;
+  padding: 10px;
+}
+.latest .grid {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.latest .grid > div {
+  flex: 29%;
+  margin: 15px 12px;
+  height: 300px;
+  padding: 10px 20px;
+  background-color: var(--latest-brown);
+}
+.latest .grid .video {
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+.latest .grid .title {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  color: white;
+  font-weight: 100;
+  font-size: small;
+}
+.latest .grid .title span {
+  font-size: 10px;
+  font-weight: 100;
+  display: block;
+  margin: 10px 0;
+}
+.latest .aman {
+  background-color: var(--brown2);
+  padding: 50px 10px;
+}
+.latest .aman h2 {
+  font-size: var(--main-title-size);
+  text-align: center;
+}
+.latest .aman h2 span {
+  color: #dac275;
+}
+.latest .meet {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 0 20px;
+}
+.latest .meet > div {
+  flex: 29%;
+  margin: 15px 12px;
+  height: 400px;
+  padding: 10px 20px;
+  border-right: 1px solid #dac27586;
+}
+.latest .meet > div:last-child {
+  border-right: none;
+}
+.latest .meet > div .profile {
+  width: 100%;
+  height: 92%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 45px;
+  border: 5px solid #dac275;
+}
+.latest .meet .title {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  text-align: center;
+  font-weight: 100;
+  font-size: medium;
+}
+.latest .meet .title span {
+  font-size: 10px;
+  font-weight: 100;
+  display: block;
+  margin: 10px 0;
 }
 @media screen and (max-width: 761px) {
   .captions {

@@ -5,13 +5,15 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "../../app/page.module.css";
 import moe from "../../public/images/asika.jpeg";
+import bose from "../../public/images/bose.webp";
+import sare from "../../public/images/sare.jpeg";
 import concert from "../../public/images/concert.jpeg";
 const Timer = dynamic(() => import("./Timer"));
 
 const noms: noms[] = [
   {
     title: "Sunday Are",
-    image: moe,
+    image: sare,
     artist: "List Entertainment (Wizkid)",
     id: Math.random() * 10000,
   },
@@ -22,9 +24,9 @@ const noms: noms[] = [
     artist: "Plug Entertainment (Davido)",
   },
   {
-    title: "Sunday Are",
+    title: "Bose Ogulu",
     id: Math.random() * 10000,
-    image: moe,
+    image: bose,
     artist: "Spaceship Collective (Burna)",
   },
 ];
