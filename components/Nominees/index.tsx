@@ -74,9 +74,9 @@ const Nominees = () => {
   };
   return (
     <div className={styles.nominees}>
-      <div className={styles.timer}>
+      {/* <div className={styles.timer}>
         <Timer />
-      </div>
+      </div> */}
 
       <h2>NOMINEES</h2>
       <div className={styles.bar}>
