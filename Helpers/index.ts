@@ -6,6 +6,9 @@ import test2 from "../public/images/concert.jpeg";
 import three from "../public/images/three.jpeg";
 import tm5 from "../public/images/tm5.jpeg";
 import two from "../public/images/two.jpeg";
+import nigga from "../public/images/nigga.jpeg";
+import white from "../public/images/white.avif";
+import chan from "../public/images/chan.webp";
 export type nominees = {
   title: string;
   isActive: boolean;
@@ -65,7 +68,30 @@ export const noms3: noms[] = [
     artist: "Record Label 3 (Wizkid)",
   },
 ];
-
+export const amanGroup: {
+  name: string;
+  position: string;
+  img: StaticImageData;
+  maxWidth?: number;
+}[] = [
+  {
+    name: "John Olubode",
+    position: "Chairman, AMAN",
+    img: white,
+  },
+  {
+    name: "Moses Blackman",
+    position: "Head of media",
+    img: nigga,
+    maxWidth: 1000,
+  },
+  {
+    name: "Chan Williamson",
+    position: "Manager, AMAN",
+    img: chan,
+    maxWidth: 500,
+  },
+];
 export const noms4: noms[] = [
   {
     title: "Michael Jackson",

@@ -10,22 +10,20 @@ const Footer = () => {
       <div className={styles.footer}>
         <div className={styles.grid}>
           <div>
-            <div className={styles.logo}>
-              <Image
-                src={logo}
-                alt="card-image"
-                fill
-                quality={100}
-                priority={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
+            <h1 style={{ fontSize: "40px" }}>
+              AMAN <br />
+              Awards
+            </h1>
           </div>
           <div>
             <h2>CONTACT</h2>
             <div>
               <div style={{ width: "22px", height: "22px" }}>
-                <i className="fa fa-map-marker" aria-hidden="true"></i>
+                <i
+                  style={{ fontSize: "19px" }}
+                  className="fa fa-map-marker"
+                  aria-hidden="true"
+                ></i>
               </div>
               <div>
                 2B Owolewa Street, Off Randle <br /> Avenue, Surulere, Lagos.
@@ -34,39 +32,26 @@ const Footer = () => {
 
             <div>
               <div style={{ width: "22px", height: "22px" }}>
-                <i className="fa fa-mobile" aria-hidden="true"></i>
+                <i
+                  style={{ fontSize: "19px" }}
+                  className="fa fa-mobile"
+                  aria-hidden="true"
+                ></i>
               </div>
               <div>+234 809 317 8359</div>
             </div>
 
             <div>
               <div style={{ width: "22px", height: "22px" }}>
-                <i className="fa fa-envelope" aria-hidden="true"></i>
+                <i
+                  style={{ fontSize: "19px" }}
+                  className="fa fa-envelope"
+                  aria-hidden="true"
+                ></i>
               </div>
               <div>info@Amanawards.com</div>
             </div>
           </div>
-          {/* <div>
-            <h2>OUR SOLUTIONS</h2>
-            <div>
-              <Link href={"/solutions/smartx"}>
-                <i className="fa fa-angle-right"></i>
-                Smart X
-              </Link>
-            </div>
-            <div>
-              <Link href={"/solutions/tracker_360"}>
-                <i className="fa fa-angle-right"></i>
-                Tracker 360
-              </Link>
-            </div>
-            <div>
-              <Link href={"/IT_consulting"}>
-                <i className="fa fa-angle-right"></i>
-                IT Consulting
-              </Link>
-            </div>
-          </div> */}
           <div>
             <h2>AMAN</h2>
             <div>

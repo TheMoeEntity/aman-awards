@@ -119,11 +119,6 @@
   .footer {
     padding: 40px 15px !important;
   }
-  .grid > div:nth-child(2) > div > div:nth-child(1) {
-    height: 50px !important;
-    width: 50px !important;
-    transform: scale(0.85);
-  }
 }
 @media screen and (max-width: 560px) {
   .logo {

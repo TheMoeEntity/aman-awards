@@ -120,7 +120,9 @@
   border-radius: 9px;
   overflow: hidden;
   position: relative;
-  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*//--------------- Hero Section ------------------ // */
@@ -579,9 +581,6 @@
   }
   .header {
     padding: 0 10px;
-  }
-  .logo {
-    margin-left: 15px;
   }
 }
 @media screen and (max-width: 490px) {

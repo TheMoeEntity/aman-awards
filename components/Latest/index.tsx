@@ -2,7 +2,8 @@
 import styles from "../../app/page.module.css";
 import Image from "next/image";
 import concert from "../../public/images/taylor.webp";
-import nigga from "../../public/images/nigga.jpeg";
+import nigga from "../../public/images/white.avif";
+import { amanGroup } from "@/Helpers";
 
 const Latest = () => {
   return (
@@ -37,12 +38,12 @@ const Latest = () => {
           MEET <span>AMAN</span>
         </h2>
         <div className={styles.meet}>
-          {[...Array(3)].map((_x, i) => (
+          {amanGroup.map((x, i) => (
             <div key={i}>
               <div className={styles.profile}>
                 <Image
                   style={{ objectFit: "cover" }}
-                  src={nigga}
+                  src={x.img}
                   alt="Nominee Image"
                   fill={true}
                   blurDataURL={
@@ -50,12 +51,14 @@ const Latest = () => {
                   }
                   quality={100}
                   priority={true}
-                  sizes="(max-width: 800px) 100vw, (max-width: 100%) 50vw, 33vw"
+                  sizes={`(max-width: ${
+                    x.maxWidth ?? "800px"
+                  }px) 100vw, (max-width: ${x.maxWidth ?? "800px"}) 50vw, 33vw`}
                 />
               </div>
               <div className={styles.title}>
-                John Olubode
-                <span>Chairman, AMAN</span>
+                {x.name}
+                <span>{x.position}</span>
               </div>
             </div>
           ))}
