@@ -1,5 +1,5 @@
 "use client";
-import { nominees, noms, noms4, noms5, titles } from "@/Helpers";
+import { noms4, noms5, titles } from "@/Helpers";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useState } from "react";
@@ -11,6 +11,7 @@ import concert from "../../public/images/concert.jpeg";
 import taylor from "../../public/images/taylor.webp";
 import land from "../../public/images/land.png";
 import { noms3 } from "@/Helpers";
+import { nominees, noms } from "@/Helpers/types";
 
 const Timer = dynamic(() => import("./Timer"));
 const noms2: noms[] = [
