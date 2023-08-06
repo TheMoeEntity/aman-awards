@@ -68,12 +68,6 @@ export const amanGroup2: {
   maxWidth?: number;
 }[] = [
   {
-    name: "David IfeanyiChukwu Abiodun Nwachukwu",
-    position: "AMAN Committee Chairman",
-    img: nigga,
-    maxWidth: 1000,
-  },
-  {
     name: "Omokore Oluwadamilola Ayoola",
     position: "Aman Awards Committee Secretary",
     img: omokore,
@@ -93,15 +87,21 @@ export const amanGroup: {
     maxWidth: 500,
   },
   {
-    name: "Walliyah Abiola",
-    position: "Marketing, Fund Raising & Public Relations.",
-    img: waaliyah,
+    name: "David IfeanyiChukwu Abiodun Nwachukwu",
+    position: "AMAN Committee Chairman",
+    img: nigga,
     maxWidth: 1000,
   },
   {
     name: "Dutchess Karifest Onyekaah",
     position: "AMAN Committee Vice Chairperson",
     img: white,
+  },
+  {
+    name: "Walliyah Abiola",
+    position: "Marketing, Fund Raising & Public Relations.",
+    img: waaliyah,
+    maxWidth: 1000,
   },
 ].concat(amanGroup2);
 export const noms4: noms[] = [
