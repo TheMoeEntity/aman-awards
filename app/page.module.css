@@ -397,12 +397,11 @@
   color: #dac275;
 }
 .latest .meet {
-  width: 95%;
+  width: 100%;
   margin: 20px auto;
   display: flex;
   /* justify-content: center; */
   overflow-x: scroll;
-  overflow-y: hidden;
   flex-flow: row;
   padding: 0 20px;
 }
@@ -425,7 +424,7 @@
 }
 .latest .meet > div .profile {
   width: 100%;
-  height: 92%;
+  height: 80%;
   position: relative;
   overflow: hidden;
   border-radius: 45px;
@@ -433,7 +432,7 @@
 }
 .latest .meet .title {
   width: 100%;
-  height: auto;
+  height: 20%;
   padding: 20px 20px;
   text-align: center;
   font-weight: 100;
@@ -532,7 +531,7 @@
     justify-content: center;
   } */
   .latest .meet > div {
-    height: 270px;
+    /* height: 270px; */
     flex: 35%;
     max-width: 230px;
   }
@@ -580,7 +579,7 @@
     flex: 35%;
     max-width: 100%;
     border-right: none;
-    border-bottom: 1px solid #dac27586;
+    /* border-bottom: 1px solid #dac27586; */
   }
   .latest .meet > div .profile {
     height: 350px;

@@ -2,10 +2,48 @@
 import styles from "../../app/page.module.css";
 import Image from "next/image";
 import concert from "../../public/images/taylor.webp";
-import nigga from "../../public/images/white.avif";
+import React, { MouseEvent } from "react";
 import { amanGroup } from "@/Helpers";
+import { useRef, useState } from "react";
 
 const Latest = () => {
+  const ourRef = useRef<HTMLDivElement | null>(null);
+  const [isMouseDown, setIsMouseDown] = useState<boolean>(false);
+  const mouseCoords = useRef({
+    startX: 0,
+    startY: 0,
+    scrollLeft: 0,
+    scrollTop: 0,
+  });
+  const [isScrolling, setIsScrolling] = useState(false);
+  const handleDragStart = (e: MouseEvent<HTMLDivElement>) => {
+    if (!ourRef.current) return;
+    const slider = ourRef.current.children[0];
+    const startX = e.pageX - (slider as HTMLElement).offsetLeft;
+    const startY = e.pageY - (slider as HTMLElement).offsetTop;
+    const scrollLeft = slider.scrollLeft;
+    const scrollTop = slider.scrollTop;
+    mouseCoords.current = { startX, startY, scrollLeft, scrollTop };
+    setIsMouseDown(true);
+    document.body.style.cursor = "grabbing";
+  };
+  const handleDragEnd = () => {
+    setIsMouseDown(false);
+    if (!ourRef.current) return;
+    document.body.style.cursor = "default";
+  };
+  const handleDrag = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isMouseDown || !ourRef.current) return;
+    e.preventDefault();
+    const slider = ourRef.current.children[0];
+    const x = e.pageX - (slider as HTMLElement).offsetLeft;
+    const y = e.pageY - (slider as HTMLElement).offsetTop;
+    const walkX = (x - mouseCoords.current.startX) * 1.5;
+    const walkY = (y - mouseCoords.current.startY) * 1.5;
+    slider.scrollLeft = mouseCoords.current.scrollLeft - walkX;
+    slider.scrollTop = mouseCoords.current.scrollTop - walkY;
+    console.log(walkX, walkY);
+  };
   return (
     <div className={styles.latest}>
       <h2>LATEST NEWS</h2>
@@ -37,7 +75,13 @@ const Latest = () => {
         <h2>
           MEET <span>AMAN</span>
         </h2>
-        <div className={styles.meet}>
+        <div
+          ref={ourRef}
+          onMouseDown={handleDragStart}
+          onMouseUp={handleDragEnd}
+          onMouseMove={handleDrag}
+          className={styles.meet}
+        >
           {amanGroup.map((x, i) => (
             <div key={i}>
               <div className={styles.profile}>
