@@ -400,15 +400,24 @@
   width: 95%;
   margin: 20px auto;
   display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
+  /* justify-content: center; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-flow: row;
   padding: 0 20px;
+}
+
+.latest .meet::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 .latest .meet > div {
   flex: 29%;
-  margin: 15px 12px;
+  margin: 40px 12px;
   height: 400px;
-  padding: 10px 20px;
+  max-width: 350px;
+  min-width: 320px;
+  padding: 0px 20px;
   border-right: 1px solid #dac27586;
 }
 .latest .meet > div:last-child {
@@ -438,7 +447,7 @@
 }
 @media screen and (max-width: 1091px) {
   .latest .meet > div {
-    height: 320px;
+    height: 380px;
   }
   .latest .meet {
     padding: 0 5px;
@@ -446,7 +455,7 @@
   }
   .latest .meet > div {
     flex: 29%;
-    margin: 15px 0px;
+    margin: 40px 0px;
   }
   .bar {
     justify-content: center;
@@ -519,9 +528,9 @@
     margin-top: 30px;
     text-align: center;
   }
-  .latest .meet {
+  /* .latest .meet {
     justify-content: center;
-  }
+  } */
   .latest .meet > div {
     height: 270px;
     flex: 35%;
@@ -561,10 +570,10 @@
   }
 }
 @media screen and (max-width: 550px) {
-  .latest .meet {
+  /* .latest .meet {
     justify-content: center;
     flex-flow: column wrap;
-  }
+  } */
 
   .latest .meet > div {
     height: auto;

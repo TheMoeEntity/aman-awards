@@ -6,20 +6,13 @@ import test2 from "../public/images/concert.jpeg";
 import three from "../public/images/three.jpeg";
 import tm5 from "../public/images/tm5.jpeg";
 import two from "../public/images/two.jpeg";
-import nigga from "../public/images/nigga.jpeg";
-import white from "../public/images/white.avif";
-import chan from "../public/images/chan.webp";
-export type nominees = {
-  title: string;
-  isActive: boolean;
-  id: number;
-};
-export type noms = {
-  title: string;
-  image: StaticImageData;
-  artist: string;
-  id: number;
-};
+import nigga from "../public/images/David IfeanyiChukwu Abiodun Nwachukwu.jpg";
+import white from "../public/images/Dutchess Karifest Onyekaah.jpg";
+import chan from "../public/images/Collins ifeanyi Onwuneme Ajereh Enebeli (Mavin Grandpa).jpg";
+import waaliyah from "../public/images/Walliyah Abiola.jpg";
+import omokore from "../public/images/Omokore Oluwadamilola Ayoola.jpg";
+import { nominees, noms } from "./types";
+
 export const titles: nominees[] = [
   {
     title: "ALL",
@@ -68,6 +61,25 @@ export const noms3: noms[] = [
     artist: "Record Label 3 (Wizkid)",
   },
 ];
+export const amanGroup2: {
+  name: string;
+  position: string;
+  img: StaticImageData;
+  maxWidth?: number;
+}[] = [
+  {
+    name: "David IfeanyiChukwu Abiodun Nwachukwu",
+    position: "AMAN Committee Chairman",
+    img: nigga,
+    maxWidth: 1000,
+  },
+  {
+    name: "Omokore Oluwadamilola Ayoola",
+    position: "Aman Awards Committee Secretary",
+    img: omokore,
+    maxWidth: 1000,
+  },
+];
 export const amanGroup: {
   name: string;
   position: string;
@@ -75,23 +87,23 @@ export const amanGroup: {
   maxWidth?: number;
 }[] = [
   {
-    name: "John Olubode",
-    position: "Chairman, AMAN",
-    img: white,
-  },
-  {
-    name: "Moses Blackman",
-    position: "Head of media",
-    img: nigga,
-    maxWidth: 1000,
-  },
-  {
-    name: "Chan Williamson",
-    position: "Manager, AMAN",
+    name: "Collins ifeanyi Onwuneme Ajereh Enebeli (Mavin Grandpa)",
+    position: "AMAN President",
     img: chan,
     maxWidth: 500,
   },
-];
+  {
+    name: "Walliyah Abiola",
+    position: "Marketing, Fund Raising & Public Relations.",
+    img: waaliyah,
+    maxWidth: 1000,
+  },
+  {
+    name: "Dutchess Karifest Onyekaah",
+    position: "AMAN Committee Vice Chairperson",
+    img: white,
+  },
+].concat(amanGroup2);
 export const noms4: noms[] = [
   {
     title: "Michael Jackson",
