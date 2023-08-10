@@ -53,8 +53,10 @@ const Latest = () => {
                   quality={100}
                   priority={true}
                   sizes={`(max-width: ${
-                    x.maxWidth ?? "800px"
-                  }px) 100vw, (max-width: ${x.maxWidth ?? "800px"}) 50vw, 33vw`}
+                    x.maxWidth + "px" ?? "800px"
+                  }px) 100vw, (max-width: ${
+                    x.maxWidth + "px" ?? "800px"
+                  }) 50vw, 33vw`}
                 />
               </div>
               <div className={styles.title}>

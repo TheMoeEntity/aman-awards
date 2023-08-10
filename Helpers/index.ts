@@ -11,6 +11,7 @@ import white from "../public/images/Dutchess Karifest Onyekaah.jpg";
 import chan from "../public/images/Collins ifeanyi Onwuneme Ajereh Enebeli (Mavin Grandpa).jpg";
 import waaliyah from "../public/images/Walliyah Abiola.jpg";
 import omokore from "../public/images/Omokore Oluwadamilola Ayoola.jpg";
+import dami from "../public/images/3.png";
 import { nominees, noms } from "./types";
 
 export const titles: nominees[] = [
@@ -68,7 +69,13 @@ export const amanGroup2: {
   maxWidth?: number;
 }[] = [
   {
-    name: "Omokore Oluwadamilola Ayoola",
+    name: "Oluwadamilola A Omokore",
+    position: "Aman Awards Committee Secretary",
+    img: dami,
+    maxWidth: 269,
+  },
+  {
+    name: "Anthony Buseni Andrew",
     position: "Aman Awards Committee Secretary",
     img: omokore,
     maxWidth: 1000,
@@ -81,20 +88,20 @@ export const amanGroup: {
   maxWidth?: number;
 }[] = [
   {
-    name: "Collins ifeanyi Onwuneme Ajereh Enebeli (Mavin Grandpa)",
+    name: "Mavin Grandpa",
     position: "AMAN President",
     img: chan,
     maxWidth: 500,
   },
   {
-    name: "David IfeanyiChukwu Abiodun Nwachukwu",
+    name: "David Nwachukwu",
     position: "AMAN Committee Chairman",
     img: nigga,
     maxWidth: 1000,
   },
   {
-    name: "Dutchess Karifest Onyekaah",
-    position: "AMAN Committee Vice Chairperson",
+    name: "Dutchess Karifest Onyekaah Esq",
+    position: "Vice chairman AMAN Awards Committee / Global Spokesperson",
     img: white,
   },
   {
