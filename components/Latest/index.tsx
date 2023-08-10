@@ -53,9 +53,9 @@ const Latest = () => {
                   quality={100}
                   priority={true}
                   sizes={`(max-width: ${
-                    x.maxWidth + "px" ?? "800px"
+                    `${x.maxWidth}px` ?? "800px"
                   }px) 100vw, (max-width: ${
-                    x.maxWidth + "px" ?? "800px"
+                    `${x.maxWidth}px` ?? "800px"
                   }) 50vw, 33vw`}
                 />
               </div>

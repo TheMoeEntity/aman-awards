@@ -6,9 +6,9 @@ import test2 from "../public/images/concert.jpeg";
 import three from "../public/images/three.jpeg";
 import tm5 from "../public/images/tm5.jpeg";
 import two from "../public/images/two.jpeg";
-import nigga from "../public/images/David IfeanyiChukwu Abiodun Nwachukwu.jpg";
+import nigga from "../public/images/2.png";
 import white from "../public/images/Dutchess Karifest Onyekaah.jpg";
-import chan from "../public/images/Collins ifeanyi Onwuneme Ajereh Enebeli (Mavin Grandpa).jpg";
+import chan from "../public/images/1.png";
 import waaliyah from "../public/images/Walliyah Abiola.jpg";
 import omokore from "../public/images/Omokore Oluwadamilola Ayoola.jpg";
 import dami from "../public/images/3.png";
@@ -91,7 +91,7 @@ export const amanGroup: {
     name: "Mavin Grandpa",
     position: "AMAN President",
     img: chan,
-    maxWidth: 500,
+    maxWidth: 269,
   },
   {
     name: "David Nwachukwu",
