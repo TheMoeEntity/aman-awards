@@ -115,8 +115,8 @@
   font-weight: bolder;
 }
 .logo {
-  width: 294.75px;
-  height: 55px;
+  width: calc(0.17 * 500px);
+  height: calc(0.17 * 500px);
   border-radius: 9px;
   overflow: hidden;
   position: relative;
@@ -315,6 +315,9 @@
   border: none;
   outline: none;
 }
+.events {
+  padding-left: 40px;
+}
 .events > div {
   margin: 40px 0;
 }
@@ -332,7 +335,7 @@
 .aboutaman h2 {
   color: var(--aman-title);
   font-size: var(--main-title-size);
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 1.4;
 }
 .aboutaman p {

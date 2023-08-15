@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import pepnops from "../../public/images/pheader.png";
+import pepnops from "../../public/images/logo-main.png";
 import Link from "next/link";
 import { CSSProperties, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -82,8 +82,7 @@ const Header = () => {
         <i className="fa-solid fa-bars"></i>
       </div>
       <div className={styles.logo}>
-        <h2>AMAN AWARDS</h2>
-        {/* <Link href={"/"}>
+        <Link href={"/"}>
           <Image
             src={pepnops}
             alt="card-image"
@@ -92,7 +91,7 @@ const Header = () => {
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-        </Link> */}
+        </Link>
       </div>
       {/* <div>
         <ul>
