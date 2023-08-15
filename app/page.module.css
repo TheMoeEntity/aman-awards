@@ -448,6 +448,13 @@
   display: block;
   margin: 10px 0;
 }
+@media screen and (max-width: 1143px) {
+  .conc {
+    position: relative;
+    width: calc(0.3 * 805px);
+    height: calc(0.3 * 793px);
+  }
+}
 @media screen and (max-width: 1091px) {
   .latest .meet > div {
     height: 380px;
@@ -488,7 +495,8 @@
     width: 60%;
   }
   .conc {
-    /* height: 50%; */
+    width: calc(0.25 * 805px);
+    height: calc(0.25 * 793px);
   }
   .events {
     width: 40%;
@@ -504,6 +512,10 @@
   .concerts {
     /* width: 60%;
     height: 700px !important; */
+  }
+  .conc {
+    width: calc(0.4 * 805px);
+    height: calc(0.4 * 793px);
   }
   .events > div {
     width: 100%;
@@ -540,7 +552,7 @@
     max-width: 230px;
   }
   .aboutaman {
-    padding: 40px 10px 20px 10px;
+    padding: 40px 5px 20px 5px;
   }
   .concerts {
     /* width: 60%;
@@ -571,6 +583,10 @@
     flex-flow: column wrap;
     margin: 10px auto;
   }
+  .conc {
+    width: calc(0.32 * 805px);
+    height: calc(0.32 * 793px);
+  }
 }
 @media screen and (max-width: 550px) {
   /* .latest .meet {
@@ -600,14 +616,20 @@
     /* width: 60%;
     height: 460px !important; */
   }
+  .conc {
+    width: calc(0.3 * 805px);
+    height: calc(0.3 * 793px);
+  }
 }
 @media screen and (max-width: 450px) {
   .latest .grid > div {
     height: 310px;
   }
   .concerts {
-    width: 100%;
-    height: 410px !important;
+    margin-left: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .getTicks {
     width: 100%;
@@ -615,9 +637,10 @@
     padding: 15px 15px;
     background-color: #dac275;
   }
+
   .conc {
-    /* width: 100%;
-    height: 280px; */
+    width: calc(0.42 * 805px);
+    height: calc(0.42 * 793px);
   }
   .hero {
     height: 450px;
@@ -655,5 +678,9 @@
 @media screen and (max-width: 360px) {
   .latest .grid > div {
     height: 270px;
+  }
+  .conc {
+    width: calc(0.27 * 805px);
+    height: calc(0.27 * 793px);
   }
 }
