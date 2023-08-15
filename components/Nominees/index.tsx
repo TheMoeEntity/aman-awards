@@ -7,7 +7,7 @@ import styles from "../../app/page.module.css";
 import moe from "../../public/images/asika.jpeg";
 import bose from "../../public/images/bose.webp";
 import sare from "../../public/images/sare.jpeg";
-import concert from "../../public/images/concert.jpeg";
+import concert from "../../public/images/aman-logo.png";
 import taylor from "../../public/images/taylor.webp";
 import land from "../../public/images/land.png";
 import { noms3 } from "@/Helpers";
@@ -169,7 +169,7 @@ const Nominees = () => {
                   sizes="(max-width: 800px) 100vw, (max-width: 100%) 50vw, 33vw"
                 />
               </div>
-              <div className={styles.getTicks}>GET TICKET</div>
+              {/* <div className={styles.getTicks}>GET TICKET</div> */}
             </div>
             <div className={styles.events}>
               <div>
