@@ -182,7 +182,9 @@ const Nominees = () => {
               </div>
               <div>
                 <h3>VENUE:</h3>
-                <span>Eko Convention center, Lagos</span>
+                <span>
+                  Eko Hotels & Suites, Victoria Island, Lagos, Nigeria
+                </span>
               </div>
             </div>
           </div>
