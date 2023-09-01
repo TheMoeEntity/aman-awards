@@ -12,11 +12,112 @@ import chan from "../public/images/1.png";
 import waaliyah from "../public/images/Walliyah Abiola.jpg";
 import omokore from "../public/images/Omokore Oluwadamilola Ayoola.jpg";
 import dami from "../public/images/3.png";
+import eliza from "../public/images/exec1.jpeg";
+import ike from "../public/images/exec2.jpeg";
+import buseni from "../public/images/exec3.jpeg";
 import { nominees, noms } from "./types";
-
+export const amanExecs: {
+  name: string;
+  position: string;
+  img: StaticImageData;
+  maxWidth?: number;
+}[] = [
+  {
+    name: "Mr Collins Ifeanyi Onwuneme Ajereh Enebeli (Mavin Grandpa)",
+    img: chan,
+    maxWidth: 1000,
+    position: "President",
+  },
+  {
+    name: "Mr Lawal Saheed Adeola",
+    img: chan,
+    maxWidth: 1000,
+    position: "1st Vice President",
+  },
+  {
+    name: "Mr Ike Lawrence Onuoha",
+    img: ike,
+    maxWidth: 1000,
+    position: "2nd Vice President",
+  },
+  {
+    name: "Mrs Elizabeth Obanla Adeola",
+    img: eliza,
+    maxWidth: 1000,
+    position: "Treasurer",
+  },
+  {
+    name: "Mr Anthony Buseni",
+    img: buseni,
+    maxWidth: 1000,
+    position: "General Secretary",
+  },
+];
+export const titles2: nominees[] = [
+  {
+    title: "MEDIA PERSONALITY SPECIAL RECOGNITION",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "TOURISM SPECIAL RECOGNITION",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "G.O.M.A OF THE YEAR(POSTHUMOUS)",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "CINEMATOGRAPHER OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "SKIT MAKER OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "SPORTS PERSONALITY OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "VISUAL ARTS ARTIST OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "FASHION DESIGNER OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "CREATIVE INDUSTRY'S FINANCIAR OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "COOPERATE SPONSOR (ARTS) OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "BI LATERAL SUPPORT/COLLABORATION SPECIAL RECOGNITION",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "AMAN MEMBERS SPECIAL RECOGNITION",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+];
 export const titles: nominees[] = [
   {
-    title: "ALL",
+    title: "CREATIVE INDUSTRIES SPECIAL RECOGNITION",
     isActive: false,
     id: Math.random() * 10000,
   },
@@ -26,17 +127,57 @@ export const titles: nominees[] = [
     id: Math.random() * 10000,
   },
   {
-    title: "PROMOTER OF THE YEAR",
+    title: "AMAN GOLDEN IMPACT RECOGNITION",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "PHOTOGRAPHER OF THE YEAR",
+    title: "MOST ICONIC AFRICAN SONG OF THE YEAR",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "VIDEOGRAPHER OF THE YEAR",
+    title: "NOLYWOOD ACTOR OF THE YEAR (MALE)",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "NOLYWOOD ACTOR OF THE YEAR (FEMALE)",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "LIFETIME ACHIEVEMENT",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "HUMANITARIAN SPECIAL RECOGNITION",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "ARTIST OF THE YEAR (MALE)",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "ARTIST OF THE YEAR (FEMALE)",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "PRODUCER OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "GOLDEN PERFORMANCE DJ OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "SONG WRITER OF THE YEAR",
     isActive: false,
     id: Math.random() * 10000,
   },

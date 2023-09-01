@@ -1,8 +1,8 @@
 "use client";
-import { noms4, noms5, titles } from "@/Helpers";
+import { noms4, noms5, titles, titles2 } from "@/Helpers";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../../app/page.module.css";
 import moe from "../../public/images/asika.jpeg";
 import bose from "../../public/images/bose.webp";
@@ -58,6 +58,12 @@ const noms1: noms[] = [
 const Nominees = () => {
   const [assets, setAssets] = useState<nominees[]>(titles);
   const [cards, setCards] = useState<noms[]>(noms1);
+  const [first, setFirst] = useState(true);
+  const [btnTitle, setBtnTitle] = useState<string>("More Categories");
+  useEffect(() => {
+    setAssets(first === true ? titles : titles2);
+    setBtnTitle(first !== true ? "Previous Categories" : "More Categories");
+  }, [first]);
   const titleAction = (id: number, name: string) => {
     // name === "PROMOTER OF THE YEAR" ? setCards(noms2) : setCards(noms1);
     switch (name) {
@@ -111,6 +117,11 @@ const Nominees = () => {
             {x.title}
           </div>
         ))}
+      </div>
+      <div className={styles.loadMore}>
+        <button onClick={() => setFirst(!first)}>
+          <b>{btnTitle}</b>
+        </button>
       </div>
       <div className={styles.nomCards}>
         {cards.map((x) => (

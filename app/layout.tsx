@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import Script from "next/script";
+import Layout from "@/components/layout";
 
 const inter = Poppins({
   subsets: ["latin"],
@@ -40,11 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
-        <Script
-          src="https://kit.fontawesome.com/4ef8c63dd7.js"
-          crossOrigin="anonymous"
-        />
+        <Layout>{children}</Layout>
       </body>
     </html>
   );

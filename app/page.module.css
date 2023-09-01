@@ -201,17 +201,38 @@
   font-size: var(--main-title-size);
   text-align: center;
 }
-.bar {
-  width: fit-content;
-  height: auto;
-  margin: 40px auto;
+.loadMore {
+  max-width: 90%;
+  width: 1100px;
   display: flex;
   flex-flow: row wrap;
+  margin: 40px auto;
+  justify-content: flex-end;
+}
+.loadMore button {
+  background-color: #dac275;
+  /* color: white; */
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 14px;
+}
+.bar {
+  max-width: 90%;
+  width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  flex-flow: row;
   padding: 0 25px;
+  overflow-x: scroll;
   justify-content: space-between;
 }
+.bar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 .bar > div {
-  width: fit-content;
+  min-width: fit-content;
   height: fit-content;
   padding: 10px 20px;
   border: 1px solid var(--brown);
@@ -356,7 +377,8 @@
   margin: 30px;
 }
 .latest .grid {
-  width: 95%;
+  max-width: 95%;
+  width: 1000px;
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
@@ -365,13 +387,14 @@
 .latest .grid > div {
   flex: 29%;
   margin: 15px 12px;
-  height: 300px;
+  height: auto;
+  cursor: pointer;
   padding: 10px 20px;
   background-color: var(--latest-brown);
 }
 .latest .grid .video {
   width: 100%;
-  height: 180px;
+  height: 220px;
   position: relative;
 }
 .latest .grid .title {
@@ -569,11 +592,11 @@
   .latest .grid > div {
     min-width: 250.5px;
     margin: 15px 12px;
-    height: 290px;
+    height: 310px;
     padding: 10px 20px;
   }
   .latest .grid .video {
-    height: 60%;
+    height: 70%;
   }
 }
 @media screen and (max-width: 650px) {
