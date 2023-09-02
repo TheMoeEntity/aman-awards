@@ -2,7 +2,7 @@
 import styles from "../../app/page.module.css";
 import Image from "next/image";
 import mavinG from "../../public/images/1.png";
-import { amanExecs, amanGroup } from "@/Helpers";
+import { amanExecs, amanGroup, blogPosts } from "@/Helpers";
 import { useRouter } from "next/navigation";
 
 const Latest = () => {
@@ -11,12 +11,12 @@ const Latest = () => {
     <div className={styles.latest}>
       <h2>LATEST NEWS</h2>
       <div className={styles.grid}>
-        {[...Array(6)].map((_x, i) => (
+        {blogPosts.map((x, i) => (
           <div onClick={() => router.push("/posts/3")} key={i}>
             <div className={styles.video}>
               <Image
                 style={{ objectFit: "cover" }}
-                src={mavinG}
+                src={x.image}
                 alt="Blog thumbnail"
                 fill={true}
                 blurDataURL={
@@ -27,16 +27,13 @@ const Latest = () => {
                 sizes="(max-width: 800px) 100vw, (max-width: 100%) 50vw, 33vw"
               />
             </div>
-            <div className={styles.title}>
-              AMAN set to promote creativity with awards
-              <span>11/13/2022</span>
-            </div>
+            <div className={styles.title}>{x.title}</div>
           </div>
         ))}
       </div>
       <div className={styles.aman}>
         <h2>
-          AMAN <span>EXECUTIVES</span>
+          MEET <span>AMAN</span>
         </h2>
         <div className={styles.meet}>
           {amanExecs.map((x, i) => (
@@ -73,7 +70,7 @@ const Latest = () => {
       </div>
       <div className={styles.aman}>
         <h2>
-          MEET <span>AMAN</span>
+          AMAN AWARDS <span>EXECUTIVES</span>
         </h2>
         <div className={styles.meet}>
           {amanGroup.map((x, i) => (

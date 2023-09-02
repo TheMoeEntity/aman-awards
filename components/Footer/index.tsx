@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
-import logo from "../../public/images/footer2.png";
 
 const Footer = () => {
   return (
@@ -10,10 +9,16 @@ const Footer = () => {
       <div className={styles.footer}>
         <div className={styles.grid}>
           <div>
-            <h1 style={{ fontSize: "40px" }}>
-              AMAN <br />
-              Awards
-            </h1>
+            <a
+              target={`_blank`}
+              rel="noopener noreferrer"
+              href="https://amanofficial.com/"
+            >
+              <h1 style={{ fontSize: "40px" }}>
+                AMAN <br />
+                Awards
+              </h1>
+            </a>
           </div>
           <div>
             <h2>CONTACT</h2>
@@ -67,7 +72,7 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <div className={styles.icons}>
+              {/* <div className={styles.icons}>
                 <a
                   target={`_blank`}
                   rel="noopener noreferrer"
@@ -96,7 +101,7 @@ const Footer = () => {
                 >
                   <i className="fa-brands fa-instagram"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

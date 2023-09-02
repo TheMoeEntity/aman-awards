@@ -14,8 +14,23 @@ import omokore from "../public/images/Omokore Oluwadamilola Ayoola.jpg";
 import dami from "../public/images/3.png";
 import eliza from "../public/images/exec1.jpeg";
 import ike from "../public/images/exec2.jpeg";
-import buseni from "../public/images/exec3.jpeg";
+import lawal from "../public/images/lawal.jpg";
+import awards from "../public/images/awards.jpg";
 import { nominees, noms } from "./types";
+export const blogPosts: { title: string; image: StaticImageData }[] = [
+  {
+    title: "AMAN set to promote creativity with awards",
+    image: chan,
+  },
+  {
+    title: "AMAN set to deliver exceptional experience at AMAN awards",
+    image: awards,
+  },
+  {
+    title: "AMAN Introduces AMAN awards",
+    image: chan,
+  },
+];
 export const amanExecs: {
   name: string;
   position: string;
@@ -23,14 +38,14 @@ export const amanExecs: {
   maxWidth?: number;
 }[] = [
   {
-    name: "Mr Collins Ifeanyi Onwuneme Ajereh Enebeli (Mavin Grandpa)",
+    name: "Mavin Grandpa",
     img: chan,
     maxWidth: 1000,
     position: "President",
   },
   {
     name: "Mr Lawal Saheed Adeola",
-    img: chan,
+    img: lawal,
     maxWidth: 1000,
     position: "1st Vice President",
   },
@@ -48,7 +63,7 @@ export const amanExecs: {
   },
   {
     name: "Mr Anthony Buseni",
-    img: buseni,
+    img: omokore,
     maxWidth: 1000,
     position: "General Secretary",
   },
@@ -215,12 +230,12 @@ export const amanGroup2: {
     img: dami,
     maxWidth: 269,
   },
-  {
-    name: "Anthony Buseni Andrew",
-    position: "Aman Awards Committee Secretary",
-    img: omokore,
-    maxWidth: 1000,
-  },
+  // {
+  //   name: "Anthony Buseni Andrew",
+  //   position: "Aman Awards Committee Secretary",
+  //   img: omokore,
+  //   maxWidth: 1000,
+  // },
 ];
 export const amanGroup: {
   name: string;
@@ -228,12 +243,12 @@ export const amanGroup: {
   img: StaticImageData;
   maxWidth?: number;
 }[] = [
-  {
-    name: "Mavin Grandpa",
-    position: "AMAN President",
-    img: chan,
-    maxWidth: 269,
-  },
+  // {
+  //   name: "Mavin Grandpa",
+  //   position: "AMAN President",
+  //   img: chan,
+  //   maxWidth: 269,
+  // },
   {
     name: "David Nwachukwu",
     position: "AMAN Committee Chairman",

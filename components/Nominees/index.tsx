@@ -9,6 +9,7 @@ import bose from "../../public/images/bose.webp";
 import sare from "../../public/images/sare.jpeg";
 import concert from "../../public/images/aman-logo.png";
 import taylor from "../../public/images/taylor.webp";
+import coming from "../../public/images/coming2.jpeg";
 import land from "../../public/images/land.png";
 import { noms3 } from "@/Helpers";
 import { nominees, noms } from "@/Helpers/types";
@@ -65,26 +66,6 @@ const Nominees = () => {
     setBtnTitle(first !== true ? "Previous Categories" : "More Categories");
   }, [first]);
   const titleAction = (id: number, name: string) => {
-    // name === "PROMOTER OF THE YEAR" ? setCards(noms2) : setCards(noms1);
-    switch (name) {
-      case "ALL":
-        setCards(noms1);
-        break;
-      case "PROMOTER OF THE YEAR":
-        setCards(noms2);
-        break;
-      case "ARTIST MANAGER OF THE YEAR":
-        setCards(noms3);
-        break;
-      case "PHOTOGRAPHER OF THE YEAR":
-        setCards(noms4);
-        break;
-      case "VIDEOGRAPHER OF THE YEAR":
-        setCards(noms5);
-        break;
-      default:
-        break;
-    }
     setAssets((x) => {
       const newAssets = x.map((x) =>
         x.id == id
@@ -129,7 +110,7 @@ const Nominees = () => {
             <div className={styles.img}>
               <Image
                 style={{ objectFit: "cover" }}
-                src={x.image}
+                src={coming}
                 alt="Nominee Image"
                 fill={true}
                 blurDataURL={
@@ -141,8 +122,8 @@ const Nominees = () => {
               />
             </div>
             <div className={styles.details}>
-              <b>{x.title}</b>
-              <div>{x.artist}</div>
+              <b>Full name</b>
+              <div>nomination</div>
             </div>
           </div>
         ))}
@@ -185,11 +166,11 @@ const Nominees = () => {
             <div className={styles.events}>
               <div>
                 <h3>EVENT DATE:</h3>
-                <span>27th August, 2023</span>
+                <span>26th November, 2023</span>
               </div>
               <div>
                 <h3>TIME:</h3>
-                <span>9:30 pm</span>
+                <span>6pm (Red Carpet)</span>
               </div>
               <div>
                 <h3>VENUE:</h3>

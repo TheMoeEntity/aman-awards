@@ -212,6 +212,7 @@
 .loadMore button {
   background-color: #dac275;
   /* color: white; */
+  color: black;
   outline: none;
   border: none;
   border-radius: 25px;
@@ -394,8 +395,11 @@
 }
 .latest .grid .video {
   width: 100%;
-  height: 220px;
+  height: 260px;
   position: relative;
+}
+.latest .grid .video img {
+  object-fit: contain !important;
 }
 .latest .grid .title {
   width: 100%;
@@ -404,6 +408,7 @@
   color: white;
   font-weight: 100;
   font-size: small;
+  text-align: center;
 }
 .latest .grid .title span {
   font-size: 10px;
