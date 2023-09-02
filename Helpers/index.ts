@@ -8,7 +8,7 @@ import tm5 from "../public/images/tm5.jpeg";
 import two from "../public/images/two.jpeg";
 import nigga from "../public/images/2.png";
 import white from "../public/images/Dutchess Karifest Onyekaah.jpg";
-import chan from "../public/images/1.png";
+import chan from "../public/images/presi.jpg";
 import waaliyah from "../public/images/Walliyah Abiola.jpg";
 import omokore from "../public/images/Omokore Oluwadamilola Ayoola.jpg";
 import dami from "../public/images/3.png";

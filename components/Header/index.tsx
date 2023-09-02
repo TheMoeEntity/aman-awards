@@ -2,25 +2,25 @@
 import Image from "next/image";
 import pepnops from "../../public/images/logo-main.png";
 import Link from "next/link";
-import { CSSProperties, useRef, useState } from "react";
+import { CSSProperties } from "react";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
 import styles from "../../app/page.module.css";
 
 const Header = () => {
   const pathname = usePathname();
 
   const showStyle = (): CSSProperties => {
-    const talkStyle: CSSProperties = {
-      position: "relative",
-      backgroundColor: "black",
-    };
-
-    const normStyle: CSSProperties = {
+    const homeStyle: CSSProperties = {
       position: "absolute",
       backgroundColor: "rgba(0, 0, 0, 0.45)",
     };
-    return pathname === "/posts/[id]" ? talkStyle : normStyle;
+
+    const blogStyle: CSSProperties = {
+      position: "relative",
+      backgroundColor: "rgba(0, 0, 0, 0.050)",
+      borderBottom: "1px solid rgba(0,0,0,0.01)",
+    };
+    return pathname === "/" ? homeStyle : blogStyle;
   };
   return (
     <div style={showStyle()} className={styles.header}>

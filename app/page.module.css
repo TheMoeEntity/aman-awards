@@ -389,9 +389,13 @@
   flex: 29%;
   margin: 15px 12px;
   height: auto;
+  width: 331px;
+  /* max-width: 331px; */
   cursor: pointer;
   padding: 10px 20px;
   background-color: var(--latest-brown);
+  flex: 10%;
+  min-width: 300px;
 }
 .latest .grid .video {
   width: 100%;
@@ -501,10 +505,12 @@
   .bar > div {
     margin-top: 25px;
   }
-  .nomCards {
+  .nomCards,
+  .latest .grid {
     justify-content: center;
   }
-  .nomCards > div {
+  .nomCards > div,
+  .latest .grid > div {
     max-width: 301.3px;
   }
   .aboutaman .grids > div:nth-child(1) {
@@ -548,12 +554,12 @@
   .events > div {
     width: 100%;
   }
-  .latest .grid > div {
+  /* .latest .grid > div {
     min-width: 250.5px;
     margin: 15px 12px;
     height: 310px;
     padding: 10px 20px;
-  }
+  } */
 
   .aboutaman .grids {
     flex-flow: column wrap;
@@ -676,7 +682,8 @@
   .dot {
     font-size: 30px;
   }
-  .nomCards > div:first-child {
+  .nomCards > div:first-child,
+  .latest .grid > div:first-child {
     margin-top: 30px;
   }
   .aboutaman .grids > div:nth-child(2) {
