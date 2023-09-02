@@ -9,7 +9,7 @@ const inter = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "The AMAN Awards | Landing page",
+  title: "The AMAN Awards",
   description: "The AMAN AWARDS official page",
   icons: [
     {

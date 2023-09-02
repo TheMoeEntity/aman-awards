@@ -21,7 +21,7 @@ const Footer = () => {
             </a>
           </div>
           <div>
-            <h2>CONTACT</h2>
+            <h2 style={{ color: "var(--brown)" }}>CONTACT</h2>
             <div>
               <div style={{ width: "22px", height: "22px" }}>
                 <i
@@ -58,50 +58,26 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h2>AMAN</h2>
+            <h2 style={{ color: "var(--brown)" }}>AMAN</h2>
             <div>
-              <Link href={"/about"}>
-                <i className="fa fa-angle-right"></i>
+              <i className="fa fa-angle-right"></i>
+              <a
+                target={`_blank`}
+                rel="noopener noreferrer"
+                href="https://amanofficial.com/"
+              >
                 Official Website
-              </Link>
+              </a>
             </div>
             <div>
-              <Link href={"/contact"}>
-                <i className="fa fa-angle-right"></i>
-                Contact Us
-              </Link>
-            </div>
-            <div>
-              {/* <div className={styles.icons}>
-                <a
-                  target={`_blank`}
-                  rel="noopener noreferrer"
-                  href="https://web.facebook.com/Moses.Nwigberi/"
-                >
-                  <i className="fa-brands fa-facebook"></i>
-                </a>
-                <a
-                  target={`_blank`}
-                  rel="noopener noreferrer"
-                  href="https://twitter.com/pepnops"
-                >
-                  <i className="fa-brands fa-twitter"></i>
-                </a>
-                <a
-                  target={`_blank`}
-                  rel="noopener noreferrer"
-                  href="https://www.linkedin.com/company/pepnops/"
-                >
-                  <i className="fa-brands fa-linkedin"></i>
-                </a>
-                <a
-                  target={`_blank`}
-                  rel="noopener noreferrer"
-                  href="https://instagram.com/pepnops"
-                >
-                  <i className="fa-brands fa-instagram"></i>
-                </a>
-              </div> */}
+              <i className="fa fa-angle-right"></i>
+              <a
+                target={`_blank`}
+                rel="noopener noreferrer"
+                href="https://www.amanofficial.com/about-us/"
+              >
+                About AMAN
+              </a>
             </div>
           </div>
         </div>
