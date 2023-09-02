@@ -59,7 +59,7 @@ const noms1: noms[] = [
 const Nominees = () => {
   const [assets, setAssets] = useState<nominees[]>(titles);
   const [cards, setCards] = useState<noms[]>(noms1);
-  const [first, setFirst] = useState(true);
+  const [first, setFirst] = useState<boolean>(true);
   const [btnTitle, setBtnTitle] = useState<string>("More Categories");
   useEffect(() => {
     setAssets(first === true ? titles : titles2);

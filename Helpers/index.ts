@@ -16,6 +16,8 @@ import eliza from "../public/images/exec1.jpeg";
 import ike from "../public/images/exec2.jpeg";
 import lawal from "../public/images/lawal.jpg";
 import awards from "../public/images/awards.jpg";
+import exec from "../public/images/exec3.jpeg";
+import plaque from "../public/images/plaque.jpg";
 import { nominees, noms } from "./types";
 export const blogPosts: { title: string; image: StaticImageData }[] = [
   {
@@ -28,7 +30,7 @@ export const blogPosts: { title: string; image: StaticImageData }[] = [
   },
   {
     title: "AMAN Introduces AMAN awards",
-    image: chan,
+    image: plaque,
   },
 ];
 export const amanExecs: {
@@ -63,7 +65,7 @@ export const amanExecs: {
   },
   {
     name: "Mr Anthony Buseni",
-    img: omokore,
+    img: exec,
     maxWidth: 1000,
     position: "General Secretary",
   },
@@ -132,7 +134,7 @@ export const titles2: nominees[] = [
 ];
 export const titles: nominees[] = [
   {
-    title: "CREATIVE INDUSTRIES SPECIAL RECOGNITION",
+    title: "LIFETIME ACHIEVEMENT",
     isActive: false,
     id: Math.random() * 10000,
   },
@@ -161,11 +163,7 @@ export const titles: nominees[] = [
     isActive: false,
     id: Math.random() * 10000,
   },
-  {
-    title: "LIFETIME ACHIEVEMENT",
-    isActive: false,
-    id: Math.random() * 10000,
-  },
+
   {
     title: "HUMANITARIAN SPECIAL RECOGNITION",
     isActive: false,
@@ -193,6 +191,11 @@ export const titles: nominees[] = [
   },
   {
     title: "SONG WRITER OF THE YEAR",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "CREATIVE INDUSTRIES SPECIAL RECOGNITION",
     isActive: false,
     id: Math.random() * 10000,
   },
