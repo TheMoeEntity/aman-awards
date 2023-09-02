@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./index.module.css";
 import profile from "../../public/images/presi.jpg";
-import awards from "../../public/images/awards.jpg";
+import awards from "../../public/images/aman-logo.png";
 
 const PostPage = () => {
   return (
@@ -20,7 +20,7 @@ const PostPage = () => {
             />
           </div>
           <div>
-            <b>Mavin Grampa</b> <br />
+            <b>AMAN Executives</b> <br />
             <span>1st September, 2023</span>
           </div>
         </div>
