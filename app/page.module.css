@@ -198,6 +198,7 @@
   background-image: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 40px;
 }
 .nominees > h2 {
   font-size: var(--main-title-size);
