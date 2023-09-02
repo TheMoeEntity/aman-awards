@@ -1,6 +1,6 @@
 "use client";
 import styles from "../../app/page.module.css";
-import icon2 from "../../public/images/land.png";
+import icon2 from "../../public/images/land_11zon.jpg";
 import Image from "next/image";
 
 const Hero = () => {

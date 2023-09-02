@@ -1,64 +1,15 @@
 "use client";
-import { noms4, noms5, titles, titles2 } from "@/Helpers";
-import dynamic from "next/dynamic";
+import { titles, titles2 } from "@/Helpers";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../../app/page.module.css";
-import moe from "../../public/images/asika.jpeg";
-import bose from "../../public/images/bose.webp";
-import sare from "../../public/images/sare.jpeg";
 import concert from "../../public/images/aman-logo.png";
-import taylor from "../../public/images/taylor.webp";
 import coming from "../../public/images/coming2.jpeg";
-import land from "../../public/images/land.png";
-import { noms3 } from "@/Helpers";
-import { nominees, noms } from "@/Helpers/types";
 
-const Timer = dynamic(() => import("./Timer"));
-const noms2: noms[] = [
-  {
-    title: "Moses Nwigberi",
-    image: concert,
-    artist: "Record Label 1 (Wizkid)",
-    id: Math.random() * 10000,
-  },
-  {
-    title: "Asa Asika",
-    id: Math.random() * 10000,
-    image: land,
-    artist: "Record Label 2 (Wizkid)",
-  },
-  {
-    title: "Bose Ogulu",
-    id: Math.random() * 10000,
-    image: taylor,
-    artist: "Record Label 3 (Wizkid)",
-  },
-];
-const noms1: noms[] = [
-  {
-    title: "Sunday Are",
-    image: sare,
-    artist: "List Entertainment (Wizkid)",
-    id: Math.random() * 10000,
-  },
-  {
-    title: "Asa Asika",
-    id: Math.random() * 10000,
-    image: moe,
-    artist: "Plug Entertainment (Davido)",
-  },
-  {
-    title: "Bose Ogulu",
-    id: Math.random() * 10000,
-    image: bose,
-    artist: "Spaceship Collective (Burna)",
-  },
-];
+import { nominees } from "@/Helpers/types";
 
 const Nominees = () => {
   const [assets, setAssets] = useState<nominees[]>(titles);
-  const [cards, setCards] = useState<noms[]>(noms1);
   const [first, setFirst] = useState<boolean>(true);
   const [btnTitle, setBtnTitle] = useState<string>("More Categories");
   useEffect(() => {
@@ -105,8 +56,8 @@ const Nominees = () => {
         </button>
       </div>
       <div className={styles.nomCards}>
-        {cards.map((x) => (
-          <div key={x.id}>
+        {[...Array(3)].map((_x, i) => (
+          <div key={i}>
             <div className={styles.img}>
               <Image
                 style={{ objectFit: "cover" }}

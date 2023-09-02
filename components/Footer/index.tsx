@@ -23,7 +23,9 @@ const Footer = () => {
           <div>
             <h2 style={{ color: "var(--brown)" }}>CONTACT</h2>
             <div>
-              <div style={{ width: "22px", height: "22px" }}>
+              <div
+                style={{ width: "22px", height: "22px", color: "var(--brown)" }}
+              >
                 <i
                   style={{ fontSize: "19px" }}
                   className="fa fa-map-marker"
@@ -36,7 +38,9 @@ const Footer = () => {
             </div>
 
             <div>
-              <div style={{ width: "22px", height: "22px" }}>
+              <div
+                style={{ width: "22px", height: "22px", color: "var(--brown)" }}
+              >
                 <i
                   style={{ fontSize: "19px" }}
                   className="fa fa-mobile"
@@ -47,7 +51,9 @@ const Footer = () => {
             </div>
 
             <div>
-              <div style={{ width: "22px", height: "22px" }}>
+              <div
+                style={{ width: "22px", height: "22px", color: "var(--brown)" }}
+              >
                 <i
                   style={{ fontSize: "19px" }}
                   className="fa fa-envelope"
