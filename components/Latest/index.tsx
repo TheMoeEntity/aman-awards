@@ -2,21 +2,22 @@
 import styles from "../../app/page.module.css";
 import Image from "next/image";
 import mavinG from "../../public/images/1.png";
-import { amanExecs, amanGroup, blogPosts } from "@/Helpers";
+import { amanExecs, amanGroup, blogPosts, blogType } from "@/Helpers";
 import { useRouter } from "next/navigation";
 
-const Latest = () => {
+const Latest = ({ data }: any) => {
   const router = useRouter();
+  console.log(data);
   return (
     <div className={styles.latest}>
       <h2>LATEST NEWS</h2>
       <div className={styles.grid}>
-        {blogPosts.map((x, i) => (
-          <div onClick={() => router.push("/posts/3")} key={i}>
+        {(data as blogType[]).map((x, i) => (
+          <div onClick={() => router.push("/posts/" + x.slug)} key={i}>
             <div className={styles.video}>
               <Image
                 style={{ objectFit: "cover" }}
-                src={x.image}
+                src={`/images/${x.blog_image}`}
                 alt="Blog thumbnail"
                 fill={true}
                 blurDataURL={
@@ -27,13 +28,16 @@ const Latest = () => {
                 sizes="(max-width: 800px) 100vw, (max-width: 100%) 50vw, 33vw"
               />
             </div>
-            <div className={styles.title}>{x.title}</div>
+            <div className={styles.title}>{x.blog_title}</div>
           </div>
         ))}
       </div>
       <div className={styles.aman}>
+        <div className={styles.right}>
+          <i className="fa-solid fa-angle-right"></i>
+        </div>
         <h2>
-          MEET <span>AMAN</span>
+          MEET <span>AMAN B.O.T</span>
         </h2>
         <div className={styles.meet}>
           {amanExecs.map((x, i) => (
@@ -61,8 +65,8 @@ const Latest = () => {
                 />
               </div>
               <div className={styles.title}>
-                {x.name}
-                <span>{x.position}</span>
+                <b>{x.name}</b>
+                <span style={{ fontSize: "15px" }}>{x.position}</span>
               </div>
             </div>
           ))}
@@ -94,8 +98,8 @@ const Latest = () => {
                 />
               </div>
               <div className={styles.title}>
-                {x.name}
-                <span>{x.position}</span>
+                <b>{x.name}</b>
+                <span style={{ fontSize: "15px" }}>{x.position}</span>
               </div>
             </div>
           ))}

@@ -423,6 +423,17 @@
 .latest .aman {
   background-color: var(--brown2);
   padding: 50px 10px;
+  position: relative;
+}
+.latest .aman .right {
+  position: absolute;
+  top: 60%;
+  font-size: 40px;
+  transform: translateY(-60%);
+  right: 6px;
+  display: none;
+  z-index: 999999;
+  color: var(--aman-title);
 }
 .latest .aman h2 {
   font-size: var(--main-title-size);
@@ -649,6 +660,9 @@
   .concerts {
     /* width: 60%;
     height: 460px !important; */
+  }
+  .latest .aman .right {
+    display: block;
   }
   .conc {
     width: calc(0.3 * 805px);

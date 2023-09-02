@@ -87,7 +87,7 @@ const Nominees = () => {
         <Timer />
       </div> */}
 
-      <h2>NOMINEES</h2>
+      <h2>Award Categories</h2>
       <div className={styles.bar}>
         {assets.map((x) => (
           <div
@@ -138,11 +138,11 @@ const Nominees = () => {
             </h2>
             <p>
               The AMAN Awards, presented by the Artiste Managers Association in
-              Nigeria (AMAN), is an annual event that celebrates and recognizes
-              exceptional talents and achievements within the Nigerian music
-              industry. The Awards is dedicated to honoring not only the artists
-              but also the creatives who play a pivotal role in shaping the
-              careers and success stories of these extraordinary musicians.
+              Nigeria (AMAN) is an annual event that recognizes and celebrates
+              exceptional talents within the creative industries. The award
+              honors not only the artistes, but also the creative individuals
+              who play a pivotal role in shaping the careers and success stories
+              of these extraordinary talents.
             </p>
           </div>
           <div>

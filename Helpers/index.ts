@@ -16,9 +16,37 @@ import eliza from "../public/images/exec1.jpeg";
 import ike from "../public/images/exec2.jpeg";
 import lawal from "../public/images/lawal.jpg";
 import awards from "../public/images/awards.jpg";
-import exec from "../public/images/exec3.jpeg";
-import plaque from "../public/images/plaque.jpg";
+import exec from "../public/images/sec2.jpg";
+import plaque from "../public/images/plaque2.jpg";
 import { nominees, noms } from "./types";
+import { getDocuments } from "./firebase";
+export class Helpers {
+  static getData = async () => {
+    try {
+      return await getDocuments();
+    } catch (error) {
+      return null;
+    }
+  };
+  static getSingle = async (slug: string) => {
+    const data = await this.getData();
+    if (!data) return;
+    const single = data.find((x) => {
+      return x.slug == slug;
+    });
+    return single;
+  };
+}
+export type blogType = {
+  blog_image: string;
+  blog_title: string;
+  slug: string;
+  paragraphs: string[];
+  headings?: {
+    title: string;
+    content: string[];
+  }[];
+};
 export const blogPosts: { title: string; image: StaticImageData }[] = [
   {
     title: "AMAN set to promote creativity with awards",
@@ -228,17 +256,11 @@ export const amanGroup2: {
   maxWidth?: number;
 }[] = [
   {
-    name: "Oluwadamilola A Omokore",
-    position: "Aman Awards Committee Secretary",
-    img: dami,
-    maxWidth: 269,
+    name: "Walliyah Abiola",
+    position: "Marketing, Fund Raising & Public Relations.",
+    img: waaliyah,
+    maxWidth: 1000,
   },
-  // {
-  //   name: "Anthony Buseni Andrew",
-  //   position: "Aman Awards Committee Secretary",
-  //   img: omokore,
-  //   maxWidth: 1000,
-  // },
 ];
 export const amanGroup: {
   name: string;
@@ -254,20 +276,20 @@ export const amanGroup: {
   // },
   {
     name: "David Nwachukwu",
-    position: "AMAN Committee Chairman",
+    position: "AMAN Awards Committee - Chairman",
     img: nigga,
     maxWidth: 1000,
   },
   {
     name: "Dutchess Karifest Onyekaah Esq",
-    position: "Vice chairman AMAN Awards Committee / Global Spokesperson",
+    position: "AMAN Awards Committee - Vice chairman / Global Spokesperson",
     img: white,
   },
   {
-    name: "Walliyah Abiola",
-    position: "Marketing, Fund Raising & Public Relations.",
-    img: waaliyah,
-    maxWidth: 1000,
+    name: "Oluwadamilola A Omokore",
+    position: "Aman Awards Committee - Secretary",
+    img: dami,
+    maxWidth: 269,
   },
 ].concat(amanGroup2);
 export const noms4: noms[] = [
