@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 
 const Latest = ({ data }: any) => {
   const router = useRouter();
-  console.log(data);
   return (
     <div className={styles.latest}>
       <h2>LATEST NEWS</h2>
