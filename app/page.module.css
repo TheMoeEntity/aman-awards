@@ -466,6 +466,7 @@
   /* height: 400px; */
   max-width: 350px;
   min-width: 320px;
+  height: fit-content;
   padding: 0px 20px;
   border-right: 1px solid #dac27541;
 }
@@ -643,7 +644,7 @@
   } */
 
   .latest .amangrid {
-    height: auto;
+    height: fit-content;
     flex: 35%;
     max-width: 100%;
     /* border-right: none; */
