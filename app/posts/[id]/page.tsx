@@ -1,4 +1,5 @@
-import { blogType, Helpers } from "@/Helpers";
+import { Helpers } from "@/Helpers";
+import { blogType } from "@/Helpers/types";
 import dynamic from "next/dynamic";
 import { redirect } from "next/navigation";
 

@@ -12,9 +12,20 @@ import lawal from "../public/images/lawal.jpg";
 import awards from "../public/images/awards.jpg";
 import exec from "../public/images/sec2.jpg";
 import plaque from "../public/images/plaque2.jpg";
-import { nominees, noms } from "./types";
+import { amanGroupType, blogPostsType, execType, nominees } from "./types";
 import { getDocuments } from "./firebase";
+
+export const validRoutes: string[] = [
+  "/localhost:3000",
+  "/",
+  "https://www.amanawards.com/",
+  "https://www.amanawards.ng/",
+  "/posts/[id]",
+];
 export class Helpers {
+  static checkValid = (pathname: string): boolean => {
+    return validRoutes.includes(pathname);
+  };
   static getData = async () => {
     try {
       return await getDocuments();
@@ -31,17 +42,8 @@ export class Helpers {
     return single;
   };
 }
-export type blogType = {
-  blog_image: string;
-  blog_title: string;
-  slug: string;
-  paragraphs: string[];
-  headings?: {
-    title: string;
-    content: string[];
-  }[];
-};
-export const blogPosts: { title: string; image: StaticImageData }[] = [
+
+export const blogPosts: blogPostsType[] = [
   {
     title: "AMAN set to promote creativity with awards",
     image: chan,
@@ -55,12 +57,7 @@ export const blogPosts: { title: string; image: StaticImageData }[] = [
     image: plaque,
   },
 ];
-export const amanExecs: {
-  name: string;
-  position: string;
-  img: StaticImageData;
-  maxWidth?: number;
-}[] = [
+export const amanExecs: execType[] = [
   {
     name: "Mavin Grandpa",
     img: chan,
@@ -223,12 +220,7 @@ export const titles: nominees[] = [
   },
 ];
 
-export const amanGroup2: {
-  name: string;
-  position: string;
-  img: StaticImageData;
-  maxWidth?: number;
-}[] = [
+export const amanGroup2: amanGroupType[] = [
   {
     name: "Walliyah Abiola",
     position: "Marketing, Fund Raising & Public Relations.",
@@ -236,12 +228,7 @@ export const amanGroup2: {
     maxWidth: 1000,
   },
 ];
-export const amanGroup: {
-  name: string;
-  position: string;
-  img: StaticImageData;
-  maxWidth?: number;
-}[] = [
+export const amanGroup: amanGroupType[] = [
   // {
   //   name: "Mavin Grandpa",
   //   position: "AMAN President",

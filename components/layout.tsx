@@ -1,4 +1,5 @@
 "use client";
+import { Helpers } from "@/Helpers";
 import { useScrollTop } from "@/Helpers/hooks";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
@@ -11,9 +12,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
   const { scrollBtn, scrollTop } = useScrollTop();
   return (
     <>
-      {pathname !== "/" && <Header />}
+      {pathname !== "/" || !(Helpers.checkValid(pathname) && <Header />)}
       {children}
-      {pathname !== "/" && <Footer />}
+      {pathname !== "/" || !(Helpers.checkValid(pathname) && <Footer />)}
 
       <Script
         src="https://kit.fontawesome.com/4ef8c63dd7.js"

@@ -1,9 +1,9 @@
 "use client";
 import styles from "../../app/page.module.css";
 import Image from "next/image";
-import mavinG from "../../public/images/1.png";
-import { amanExecs, amanGroup, blogPosts, blogType } from "@/Helpers";
+import { amanExecs, amanGroup } from "@/Helpers";
 import { useRouter } from "next/navigation";
+import { blogType } from "@/Helpers/types";
 
 const Latest = ({ data }: any) => {
   const router = useRouter();
@@ -40,11 +40,7 @@ const Latest = ({ data }: any) => {
         </h2>
         <div className={styles.meet}>
           {amanExecs.map((x, i) => (
-            <div
-              onClick={() => router.push("/posts/3")}
-              className={styles.amangrid}
-              key={i}
-            >
+            <div className={styles.amangrid} key={i}>
               <div className={styles.profile}>
                 <Image
                   style={{ objectFit: "cover" }}

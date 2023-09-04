@@ -13,17 +13,15 @@ const NotFound = () => {
           <div className="notfound-404">
             <h1>Oops!</h1>
             <h2>
-              404 - The Requested Page {pathName} {`can't`} be found
+              404 - The Requested Page{" "}
+              {pathName !== "/not-found" && `"${pathName}"`}
+              {` can't`} be found
             </h2>
           </div>
           <Link href={`/`}>
-            <span style={{ color: "var(--brown)" }}> Go To Homepage</span>
+            <span> Go To Homepage</span>
           </Link>
         </div>
-        <Script
-          src="https://kit.fontawesome.com/4ef8c63dd7.js"
-          crossOrigin="anonymous"
-        ></Script>
       </div>
     </>
   );
