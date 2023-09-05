@@ -405,9 +405,9 @@
   height: 260px;
   position: relative;
 }
-.latest .grid .video img {
+/* .latest .grid .video img {
   object-fit: contain !important;
-}
+} */
 .latest .grid .title {
   width: 100%;
   height: auto;

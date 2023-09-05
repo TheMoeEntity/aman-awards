@@ -11,11 +11,9 @@ export default async function Home() {
   const data = await Helpers.getData();
   return (
     <main className={styles.main}>
-      <Header />
       <Hero />
       <Nominees />
       <Latest data={data} />
-      <Footer />
     </main>
   );
 }

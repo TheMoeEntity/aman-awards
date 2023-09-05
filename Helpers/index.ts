@@ -4,7 +4,6 @@ import nigga from "../public/images/2.png";
 import white from "../public/images/Dutchess Karifest Onyekaah.jpg";
 import chan from "../public/images/presi.jpg";
 import waaliyah from "../public/images/Walliyah Abiola.jpg";
-import omokore from "../public/images/Omokore Oluwadamilola Ayoola.jpg";
 import dami from "../public/images/3.png";
 import eliza from "../public/images/exec1.jpeg";
 import ike from "../public/images/exec2.jpeg";
@@ -15,15 +14,15 @@ import plaque from "../public/images/plaque2.jpg";
 import { amanGroupType, blogPostsType, execType, nominees } from "./types";
 import { getDocuments } from "./firebase";
 
-export const validRoutes: string[] = [
-  "/localhost:3000",
-  "/",
-  "https://www.amanawards.com/",
-  "https://www.amanawards.ng/",
-  "/posts/[id]",
-];
 export class Helpers {
   static checkValid = (pathname: string): boolean => {
+    const validRoutes: string[] = [
+      "/localhost:3000",
+      "/",
+      "https://www.amanawards.com/",
+      "https://www.amanawards.ng/",
+      "/posts/" + pathname.slice(7, pathname.length),
+    ];
     return validRoutes.includes(pathname);
   };
   static getData = async () => {

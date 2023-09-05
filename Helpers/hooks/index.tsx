@@ -1,6 +1,8 @@
+import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 
 export const useScrollTop = () => {
+  const pathname = usePathname();
   const scrollBtn = useRef<HTMLDivElement | null>(null);
   const isBrowser = () => typeof window !== "undefined";
   useEffect(() => {
@@ -28,5 +30,5 @@ export const useScrollTop = () => {
     if (!isBrowser()) return;
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  return { scrollTop, scrollBtn };
+  return { scrollTop, scrollBtn, pathname };
 };
