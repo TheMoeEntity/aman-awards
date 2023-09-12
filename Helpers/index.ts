@@ -70,7 +70,7 @@ export const amanExecs: execType[] = [
     position: "1st Vice President",
   },
   {
-    name: "Mr iKECHUKWU (Black PHARAOH) Onuoha",
+    name: "Mr iKECHUKWU (Black PHARAOH) Onuorah",
     img: ike,
     maxWidth: 1000,
     position: "2nd Vice President",
