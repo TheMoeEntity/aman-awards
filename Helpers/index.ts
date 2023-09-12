@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-import nigga from "../public/images/2.png";
+import nigga from "../public/images/david.jpeg";
 import white from "../public/images/Dutchess Karifest Onyekaah.jpg";
 import chan from "../public/images/presi.jpg";
 import waaliyah from "../public/images/Walliyah Abiola.jpg";
@@ -70,7 +70,7 @@ export const amanExecs: execType[] = [
     position: "1st Vice President",
   },
   {
-    name: "Mr Ike Lawrence Onuoha",
+    name: "Mr iKECHUKWU (Black PHARAOH) Onuoha",
     img: ike,
     maxWidth: 1000,
     position: "2nd Vice President",
@@ -236,7 +236,7 @@ export const amanGroup: amanGroupType[] = [
   // },
   {
     name: "David Nwachukwu",
-    position: "AMAN Awards Committee - Chairman",
+    position: "AMAN Awards Committee - Chairman/AMAN, Project Director",
     img: nigga,
     maxWidth: 1000,
   },
