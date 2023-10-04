@@ -157,7 +157,7 @@ export const titles: nominees[] = [
     id: Math.random() * 10000,
   },
   {
-    title: "ARTIST MANAGER OF THE YEAR",
+    title: "ARTISTE MANAGER OF THE YEAR",
     isActive: true,
     id: Math.random() * 10000,
   },
@@ -188,12 +188,12 @@ export const titles: nominees[] = [
     id: Math.random() * 10000,
   },
   {
-    title: "ARTIST OF THE YEAR (MALE)",
+    title: "ARTISTE OF THE YEAR (MALE)",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "ARTIST OF THE YEAR (FEMALE)",
+    title: "ARTISTE OF THE YEAR (FEMALE)",
     isActive: false,
     id: Math.random() * 10000,
   },
