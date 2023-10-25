@@ -90,130 +90,145 @@ export const amanExecs: execType[] = [
 ];
 export const titles2: nominees[] = [
   {
-    title: "MEDIA PERSONALITY SPECIAL RECOGNITION",
+    title: "Nollywood actor of the year Award (Male)",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "TOURISM SPECIAL RECOGNITION",
+    title: "Artiste Manager of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "G.O.M.A OF THE YEAR(POSTHUMOUS)",
+    title: "Artiste of the year Award (Female)",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "CINEMATOGRAPHER OF THE YEAR",
+    title: "AMAN Golden Global Impact Recognition Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "SKIT MAKER OF THE YEAR",
+    title: "G.O.M.A of the year (Posthumous)",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "SPORTS PERSONALITY OF THE YEAR",
+    title: "Sports personality of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "VISUAL ARTS ARTIST OF THE YEAR",
+    title: "Cinematographer of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "FASHION DESIGNER OF THE YEAR",
+    title: "Creative Industry's Financier of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "CREATIVE INDUSTRY'S FINANCIAR OF THE YEAR",
+    title: "Bi Lateral Support/Collaboration Special Recognition Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "COOPERATE SPONSOR (ARTS) OF THE YEAR",
+    title: "Lifetime Achievement Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "BI LATERAL SUPPORT/COLLABORATION SPECIAL RECOGNITION",
+    title: "AMAN Artiste of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "AMAN MEMBERS SPECIAL RECOGNITION",
+    title: "Humanitarian Special Recognition Award",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "Artiste of the year Award (Male)",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "Creative industries special recognition Award",
+    isActive: false,
+    id: Math.random() * 10000,
+  },
+  {
+    title: "Most Iconic African Song of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
 ];
 export const titles: nominees[] = [
   {
-    title: "LIFETIME ACHIEVEMENT",
+    title: "Innovation & Technology Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "ARTISTE MANAGER OF THE YEAR",
+    title: "Skit maker of thhe year Award",
     isActive: true,
     id: Math.random() * 10000,
   },
   {
-    title: "AMAN GOLDEN IMPACT RECOGNITION",
+    title: "Fashion Designer of the Year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "MOST ICONIC AFRICAN SONG OF THE YEAR",
+    title: "Cooperate Sponsor (Arts) of the Year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "NOLYWOOD ACTOR OF THE YEAR (MALE)",
+    title: "Tourism Special Recognition Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "NOLYWOOD ACTOR OF THE YEAR (FEMALE)",
+    title: "Visual Arts Artiste of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
 
   {
-    title: "HUMANITARIAN SPECIAL RECOGNITION",
+    title: "Golden Performance DJ of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "ARTISTE OF THE YEAR (MALE)",
+    title: "Song Writer of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "ARTISTE OF THE YEAR (FEMALE)",
+    title: "Best Emerging Actor In Role Interpretation (Male) Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "PRODUCER OF THE YEAR",
+    title: "Nollywood actor of the year Award (Female)",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "GOLDEN PERFORMANCE DJ OF THE YEAR",
+    title: "Media personality special recognition Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "SONG WRITER OF THE YEAR",
+    title: "Producer of the year Award",
     isActive: false,
     id: Math.random() * 10000,
   },
   {
-    title: "CREATIVE INDUSTRIES SPECIAL RECOGNITION",
+    title: "Best Emerging Actor In Role Interpretation (Female) Award",
     isActive: false,
     id: Math.random() * 10000,
   },
