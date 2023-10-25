@@ -172,7 +172,7 @@ export const titles: nominees[] = [
     id: Math.random() * 10000,
   },
   {
-    title: "Skit maker of thhe year Award",
+    title: "Skit maker of the year Award",
     isActive: true,
     id: Math.random() * 10000,
   },
