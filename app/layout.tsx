@@ -9,8 +9,9 @@ const inter = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "The AMAN Awards",
-  description: "The AMAN AWARDS official page",
+  title: "AMAN Awards - Celebrating Nigeria's Creative Industry Talents",
+  description:
+    "Discover the prestigious AMAN Awards, an annual event by the Artiste Managers Association in Nigeria, honoring exceptional talents and the creative individuals who shape their success. Join us in celebrating the stars and behind-the-scenes heroes of the Nigerian creative industry.",
   icons: [
     {
       rel: "icon",
