@@ -1,9 +1,14 @@
 import { StaticImageData } from "next/image";
-
+export type nomSingle = {
+  name: string;
+  image: StaticImageData;
+  nomination: string;
+};
 export type nominees = {
   title: string;
   isActive: boolean;
   id: number;
+  nominees: nomSingle[];
 };
 export type execType = {
   name: string;

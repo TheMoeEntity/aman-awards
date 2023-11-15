@@ -6,17 +6,24 @@ import styles from "../../app/page.module.css";
 import concert from "../../public/images/aman-logo.png";
 import coming from "../../public/images/coming2.jpeg";
 
-import { nominees } from "@/Helpers/types";
+import { nominees, nomSingle } from "@/Helpers/types";
 
 const Nominees = () => {
   const [assets, setAssets] = useState<nominees[]>(titles);
   const [first, setFirst] = useState<boolean>(true);
+  const [noms, setNoms] = useState<nomSingle[]>(assets[0].nominees);
   const [btnTitle, setBtnTitle] = useState<string>("More Categories");
   useEffect(() => {
     setAssets(first === true ? titles : titles2);
     setBtnTitle(first !== true ? "Previous Categories" : "More Categories");
   }, [first]);
   const titleAction = (id: number, name: string) => {
+    const currNoms: nomSingle[] | undefined = assets.find(
+      (x) => x.id === id
+    )?.nominees;
+    if (currNoms) {
+      setNoms(currNoms);
+    }
     setAssets((x) => {
       const newAssets = x.map((x) =>
         x.id == id
@@ -56,7 +63,7 @@ const Nominees = () => {
         </button>
       </div>
       <div className={styles.nomCards}>
-        {[...Array(3)].map((_x, i) => (
+        {noms.map((x, i) => (
           <div key={i}>
             <div className={styles.img}>
               <Image
@@ -73,8 +80,8 @@ const Nominees = () => {
               />
             </div>
             <div className={styles.details}>
-              <b>Full name</b>
-              <div>nomination</div>
+              <b>{x.name}</b>
+              <div>{x.nomination}</div>
             </div>
           </div>
         ))}

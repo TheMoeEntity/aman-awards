@@ -256,13 +256,14 @@
   display: flex;
   margin: 20px auto;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .nomCards > div {
   flex: 10%;
-  margin: 10px 10px;
+  margin: 10px 17px;
   height: 390px;
   min-width: 300px;
+  max-width: 316px;
 }
 .timer {
   width: fit-content;
