@@ -1,6 +1,48 @@
-import { StaticImageData } from "next/image";
-
-import nigga from "../public/images/david.jpeg";
+import _5star from "../public/images/5 star.jpg";
+import _7speed from "../public/images/7 Speed.jpg";
+import _042 from "../public/images/042.jpg";
+import adaora from "../public/images/ADAORA ELONU.jpg";
+import adesuwa from "../public/images/Adesuwa Etomi.jpg";
+import alexCross from "../public/images/Alex Cross.jpg";
+import allenOnyema from "../public/images/Allen Onyema.jpg";
+import andreVibez from "../public/images/Andre Vibez.jpg";
+import stitches from "../public/images/AY Stitches.jpg";
+import ayraStarr from "../public/images/Ayra Starr.jpg";
+import bimbo from "../public/images/Bimbo Ademoye.jpg";
+import shaggi from "../public/images/Broda Shaggi.jpg";
+import chico from "../public/images/Chico.jpg";
+import osita from "../public/images/CHIEF OSITA OKUKOGWU.jpg";
+import monday from "../public/images/CHIEF SIR MONDAY JOHN ONYEME.jpg";
+import chinenye from "../public/images/Chinenye Nnebe.jpg";
+import nigga from "../public/images/David IfeanyiChukwu Abiodun Nwachukwu.jpg";
+import chizoba from "../public/images/Chizoba Nwokoye.jpg";
+import freeze from "../public/images/Daddy Freeze.jpg";
+import djbign from "../public/images/DJ BIG N.jpg";
+import spinall from "../public/images/DJ SPINALL.jpg";
+import dmw from "../public/images/DMW RECORD LABEL.jpg";
+import jazzy from "../public/images/Don Jazzy.jpg";
+import emoney from "../public/images/E MONEY.jpg";
+import eddie from "../public/images/Eddie Jay Omo.....jpg";
+import lawani from "../public/images/Edi Lawani.jpg";
+import falz from "../public/images/Falz.jpg";
+import favor from "../public/images/Favour Chuks.png";
+import flavor from "../public/images/Flavour.jpg";
+import fredrick from "../public/images/Fredrick Leonard.jpg";
+import gabriel from "../public/images/GABRIEL AFOLAYAN.jpg";
+import gilbert from "../public/images/GILBERT ODIGIE OBOH.jpg";
+import idowu from "../public/images/IDOWU ADEDAPO.jpg";
+import ikogosi from "../public/images/IKOGOSI WARM SPRING RESORT.jpg";
+import drille from "../public/images/Johnny Drille.jpg";
+import rone from "../public/images/JULIUS RONE.jpg";
+import kcee from "../public/images/Kcee.jpg";
+import kelechi from "../public/images/Kelechi Amadi Obi.jpg";
+import Kenny from "../public/images/Kenny Ogungbe.jpg";
+import kim from "../public/images/Kim Lawani.jpg";
+import kukbeatz from "../public/images/KUKBEATZ.jpg";
+import london from "../public/images/LONDON.jpg";
+import Mbryo from "../public/images/Mbryo.jpg";
+import momodu from "../public/images/Momodu Abubakar Joseph.jpg";
+import macaroni from "../public/images/MR. MACARONI.jpg";
 import white from "../public/images/Dutchess Karifest Onyekaah.jpg";
 import chan from "../public/images/presi.jpg";
 import waaliyah from "../public/images/Walliyah Abiola.jpg";
@@ -96,7 +138,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Gabriel Afolayan",
-        image: lawal,
+        image: gabriel,
         nomination: "Nollywood actor of the year Award (Male)",
       },
       {
@@ -106,7 +148,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Fredrick Leonard",
-        image: lawal,
+        image: fredrick,
         nomination: "Nollywood actor of the year Award (Male)",
       },
     ],
@@ -150,7 +192,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Ayra Starr",
-        image: lawal,
+        image: ayraStarr,
         nomination: "Artiste of the year Award (Female)",
       },
     ],
@@ -162,12 +204,12 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "DMW Record Label",
-        image: lawal,
+        image: dmw,
         nomination: "AMAN Golden Global Impact Recognition Award",
       },
       {
         name: "Five Star Music Label",
-        image: lawal,
+        image: _5star,
         nomination: "AMAN Golden Global Impact Recognition Award",
       },
       {
@@ -194,12 +236,12 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Chief Gilbert Odigie Oboh",
-        image: lawal,
+        image: gilbert,
         nomination: "G.O.M.A of the year (Posthumous)",
       },
       {
         name: "Chief Osita Okukogu",
-        image: lawal,
+        image: osita,
         nomination: "G.O.M.A of the year (Posthumous)",
       },
       {
@@ -209,12 +251,12 @@ export const titles2: nominees[] = [
       },
       {
         name: "Kim Lawani",
-        image: lawal,
+        image: kim,
         nomination: "G.O.M.A of the year (Posthumous)",
       },
       {
         name: "Eddie Jay Omodiaogbe",
-        image: lawal,
+        image: eddie,
         nomination: "G.O.M.A of the year (Posthumous)",
       },
     ],
@@ -226,7 +268,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Adaora Elonu",
-        image: lawal,
+        image: adaora,
         nomination: "Sports personality of the year Award",
       },
       {
@@ -248,7 +290,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Idowu Adedapo - King of Thieves, Road to Yesterday, Knock Out, Ijakumo",
-        image: lawal,
+        image: idowu,
         nomination: "Cinematographer of the year Award",
       },
       {
@@ -317,7 +359,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Don Jazzy",
-        image: lawal,
+        image: jazzy,
         nomination: "Lifetime Achievement Award",
       },
       {
@@ -327,7 +369,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Edi Lawani",
-        image: lawal,
+        image: lawani,
         nomination: "Lifetime Achievement Award",
       },
     ],
@@ -344,7 +386,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Favor Chuks",
-        image: lawal,
+        image: favor,
         nomination: "Lifetime Achievement Award",
       },
       {
@@ -366,7 +408,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Alex Onyema",
-        image: lawal,
+        image: allenOnyema,
         nomination: "Humanitarian Special Recognition Award",
       },
       {
@@ -393,7 +435,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Falz",
-        image: lawal,
+        image: falz,
         nomination: "Artiste of the year Award (Male)",
       },
       {
@@ -410,7 +452,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Kenny Ogungbe",
-        image: lawal,
+        image: Kenny,
         nomination: "Creative industries special recognition Award",
       },
       {
@@ -420,7 +462,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "E Money",
-        image: lawal,
+        image: emoney,
         nomination: "Creative industries special recognition Award",
       },
     ],
@@ -437,12 +479,12 @@ export const titles2: nominees[] = [
       },
       {
         name: "Game Changer - Flavor",
-        image: lawal,
+        image: flavor,
         nomination: "Most Iconic African Song of the year Award",
       },
       {
         name: "Ojapiano - Kcee",
-        image: lawal,
+        image: kcee,
         nomination: "Most Iconic African Song of the year Award",
       },
     ],
@@ -456,7 +498,7 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Julius Rone",
-        image: lawal,
+        image: rone,
         nomination: "Innovation & Technology Award",
       },
       {
@@ -478,12 +520,12 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Mr Macaroni",
-        image: lawal,
+        image: macaroni,
         nomination: "Skit maker of the year Award",
       },
       {
         name: "Broda Shaggi",
-        image: lawal,
+        image: shaggi,
         nomination: "Skit maker of the year Award",
       },
       {
@@ -510,7 +552,7 @@ export const titles: nominees[] = [
       },
       {
         name: "AY Stitches",
-        image: lawal,
+        image: stitches,
         nomination: "Fashion Designer of the Year Award",
       },
     ],
@@ -554,7 +596,7 @@ export const titles: nominees[] = [
       },
       {
         name: "Ikogosi Waem Spring Resort",
-        image: lawal,
+        image: ikogosi,
         nomination: "Tourism Special Recognition Award",
       },
     ],
@@ -566,7 +608,7 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Kelechi Amadi Obi",
-        image: lawal,
+        image: kelechi,
         nomination: "Visual Arts Artiste of the year Award",
       },
       {
@@ -594,12 +636,12 @@ export const titles: nominees[] = [
       },
       {
         name: "DJ Big N",
-        image: lawal,
+        image: djbign,
         nomination: "Golden Performance DJ of the year Award",
       },
       {
         name: "DJ Spinall",
-        image: lawal,
+        image: spinall,
         nomination: "Golden Performance DJ of the year Award",
       },
     ],
@@ -611,7 +653,7 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Mbryo",
-        image: lawal,
+        image: Mbryo,
         nomination: "Song Writer of the year Award",
       },
       {
@@ -621,7 +663,7 @@ export const titles: nominees[] = [
       },
       {
         name: "Johnny Drille",
-        image: lawal,
+        image: drille,
         nomination: "Song Writer of the year Award",
       },
     ],
@@ -633,17 +675,17 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Momodu Abubakar Joseph",
-        image: lawal,
+        image: momodu,
         nomination: "Best Emerging Actor In Role Interpretation (Male) Award",
       },
       {
         name: "Alex Cross",
-        image: lawal,
+        image: alexCross,
         nomination: "Best Emerging Actor In Role Interpretation (Male) Award",
       },
       {
         name: "042 Prince Jay",
-        image: lawal,
+        image: _042,
         nomination: "Best Emerging Actor In Role Interpretation (Male) Award",
       },
     ],
@@ -655,7 +697,7 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Bimbo Ademoye",
-        image: lawal,
+        image: bimbo,
         nomination: "Nollywood actor of the year Award (Female)",
       },
       {
@@ -665,7 +707,7 @@ export const titles: nominees[] = [
       },
       {
         name: "Adesuwa Etomi",
-        image: lawal,
+        image: adesuwa,
         nomination: "Nollywood actor of the year Award (Female)",
       },
     ],
@@ -682,12 +724,12 @@ export const titles: nominees[] = [
       },
       {
         name: "Daddy Freeze",
-        image: lawal,
+        image: freeze,
         nomination: "Media personality special recognition Award",
       },
       {
         name: "Chico",
-        image: lawal,
+        image: chico,
         nomination: "Media personality special recognition Award",
       },
     ],
@@ -699,17 +741,17 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Andrew Vibez",
-        image: lawal,
+        image: andreVibez,
         nomination: "Producer of the year Award",
       },
       {
         name: "Kukbeat",
-        image: lawal,
+        image: kukbeatz,
         nomination: "Producer of the year Award",
       },
       {
         name: "London",
-        image: lawal,
+        image: london,
         nomination: "Producer of the year Award",
       },
     ],
@@ -721,12 +763,12 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Chizoba Nwokoye",
-        image: lawal,
+        image: chizoba,
         nomination: "Best Emerging Actor In Role Interpretation (Female) Award",
       },
       {
         name: "Chinenye Nnebe",
-        image: lawal,
+        image: chinenye,
         nomination: "Best Emerging Actor In Role Interpretation (Female) Award",
       },
       {

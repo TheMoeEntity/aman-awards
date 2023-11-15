@@ -68,7 +68,7 @@ const Nominees = () => {
             <div className={styles.img}>
               <Image
                 style={{ objectFit: "cover" }}
-                src={coming}
+                src={x.image}
                 alt="Nominee Image"
                 fill={true}
                 blurDataURL={
