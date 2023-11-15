@@ -50,6 +50,37 @@ import dami from "../public/images/3.png";
 import eliza from "../public/images/exec1.jpeg";
 import ike from "../public/images/exec2.jpeg";
 import lawal from "../public/images/lawal.jpg";
+import mustapha from "../public/images/Mustapha Gajibo.jpg";
+import nands from "../public/images/N & S.jpg";
+import nedu from "../public/images/Nedu.jpg";
+import neptune from "../public/images/Neptune.jpg";
+import nwoha from "../public/images/Nwoha Chioma Blessing.jpg";
+import obi from "../public/images/Obi Cubana.jpg";
+import omahlay from "../public/images/Omah Lay.jpg";
+import peju from "../public/images/PEJU ALATISE.jpg";
+import philip from "../public/images/PHILIP TRIMNELL.jpg";
+import pretty from "../public/images/Pretty Okafor.jpg";
+import rayne from "../public/images/Rayne.png";
+import rema from "../public/images/REMA.jpg";
+import Ruger from "../public/images/Ruger.jpg";
+import sabinus from "../public/images/Sabinus.jpg";
+import sean from "../public/images/Sean Okeke.jpg";
+import simi from "../public/images/Simi.jpg";
+import stephen from "../public/images/Stephen Nana.jpg";
+import sunday from "../public/images/Sunday Aree.jpg";
+import british from "../public/images/THE BRITISH HIGH COMMISSION (DBT).jpg";
+import tobiamusan from "../public/images/Tobi Amusan.jpg";
+import tobibakre from "../public/images/TOBI BAKRE.jpg";
+import toka from "../public/images/TOKA McBAROR.jpg";
+import tunji from "../public/images/Tunji Olalere.jpg";
+import uju from "../public/images/UJU OKOLI.jpg";
+import usaid from "../public/images/USAID.jpg";
+import victor from "../public/images/VICTOR OSIMHEN.jpg";
+import wakanow from "../public/images/Wakanow.jpg";
+import ybnl from "../public/images/YBNL.jpg";
+import yemialade from "../public/images/Yemi Alade.jpg";
+import yinka from "../public/images/Yinka Edward.jpg";
+import yomicasual from "../public/images/Yomi Casual.jpg";
 import awards from "../public/images/awards.jpg";
 import exec from "../public/images/sec2.jpg";
 import plaque from "../public/images/plaque2.jpg";
@@ -143,7 +174,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Tobi Bakre",
-        image: lawal,
+        image: tobibakre,
         nomination: "Nollywood actor of the year Award (Male)",
       },
       {
@@ -160,17 +191,17 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Sean Okeke",
-        image: lawal,
+        image: sean,
         nomination: "Artiste Manager of the year Award",
       },
       {
         name: "7speed",
-        image: lawal,
+        image: null,
         nomination: "Artiste Manager of the year Award",
       },
       {
         name: "Stephen Nana",
-        image: lawal,
+        image: stephen,
         nomination: "Artiste Manager of the year Award",
       },
     ],
@@ -182,12 +213,12 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Simi",
-        image: lawal,
+        image: simi,
         nomination: "Artiste of the year Award (Female)",
       },
       {
         name: "Yemi Alade",
-        image: lawal,
+        image: yemialade,
         nomination: "Artiste of the year Award (Female)",
       },
       {
@@ -214,17 +245,17 @@ export const titles2: nominees[] = [
       },
       {
         name: "Jonzing World",
-        image: lawal,
+        image: null,
         nomination: "AMAN Golden Global Impact Recognition Award",
       },
       {
         name: "Mavin Records",
-        image: lawal,
+        image: null,
         nomination: "AMAN Golden Global Impact Recognition Award",
       },
       {
         name: "YBNL Records",
-        image: lawal,
+        image: ybnl,
         nomination: "AMAN Golden Global Impact Recognition Award",
       },
     ],
@@ -246,7 +277,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Tunji Olalere",
-        image: lawal,
+        image: tunji,
         nomination: "G.O.M.A of the year (Posthumous)",
       },
       {
@@ -273,12 +304,12 @@ export const titles2: nominees[] = [
       },
       {
         name: "Tobi Amusan",
-        image: lawal,
+        image: tobiamusan,
         nomination: "Sports personality of the year Award",
       },
       {
         name: "Victor Osimhen",
-        image: lawal,
+        image: victor,
         nomination: "Sports personality of the year Award",
       },
     ],
@@ -295,12 +326,12 @@ export const titles2: nominees[] = [
       },
       {
         name: "Toka Mcbaror - Dark October, Almajiri Herdsmen, Underbelly (the Journey)",
-        image: lawal,
+        image: toka,
         nomination: "Cinematographer of the year Award",
       },
       {
         name: "Yinka Edward - Crime and Justice Lagos, The Milkmaid, Shuga",
-        image: lawal,
+        image: yinka,
         nomination: "Cinematographer of the year Award",
       },
     ],
@@ -312,17 +343,17 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Access Bank",
-        image: lawal,
+        image: null,
         nomination: "Creative Industry's Financier of the year Award",
       },
       {
         name: "GT Bank",
-        image: lawal,
+        image: null,
         nomination: "Creative Industry's Financier of the year Award",
       },
       {
         name: "BOI",
-        image: lawal,
+        image: null,
         nomination: "Creative Industry's Financier of the year Award",
       },
     ],
@@ -334,19 +365,19 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Alliance Francais",
-        image: lawal,
+        image: null,
         nomination:
           "Bi Lateral Support/Collaboration Special Recognition Award",
       },
       {
         name: "British Council",
-        image: lawal,
+        image: british,
         nomination:
           "Bi Lateral Support/Collaboration Special Recognition Award",
       },
       {
         name: "USAID",
-        image: lawal,
+        image: usaid,
         nomination:
           "Bi Lateral Support/Collaboration Special Recognition Award",
       },
@@ -364,7 +395,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Sunday Areh",
-        image: lawal,
+        image: sunday,
         nomination: "Lifetime Achievement Award",
       },
       {
@@ -381,7 +412,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Irhay",
-        image: lawal,
+        image: null,
         nomination: "Lifetime Achievement Award",
       },
       {
@@ -391,7 +422,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Rayne",
-        image: lawal,
+        image: rayne,
         nomination: "Lifetime Achievement Award",
       },
     ],
@@ -403,7 +434,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Obi Cubana",
-        image: lawal,
+        image: obi,
         nomination: "Humanitarian Special Recognition Award",
       },
       {
@@ -413,12 +444,12 @@ export const titles2: nominees[] = [
       },
       {
         name: "Sen Ned Nwoko",
-        image: lawal,
+        image: null,
         nomination: "Humanitarian Special Recognition Award",
       },
       {
         name: "Deputy Governor Delta State",
-        image: lawal,
+        image: null,
         nomination: "Humanitarian Special Recognition Award",
       },
     ],
@@ -430,7 +461,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "KCee",
-        image: lawal,
+        image: kcee,
         nomination: "Artiste of the year Award (Male)",
       },
       {
@@ -440,7 +471,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Rema",
-        image: lawal,
+        image: rema,
         nomination: "Artiste of the year Award (Male)",
       },
     ],
@@ -457,7 +488,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "Pretty Okafor",
-        image: lawal,
+        image: pretty,
         nomination: "Creative industries special recognition Award",
       },
       {
@@ -474,7 +505,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Asiwaju - Ruger",
-        image: lawal,
+        image: Ruger,
         nomination: "Most Iconic African Song of the year Award",
       },
       {
@@ -503,12 +534,12 @@ export const titles: nominees[] = [
       },
       {
         name: "Mustapha Gajabo",
-        image: lawal,
+        image: mustapha,
         nomination: "Innovation & Technology Award",
       },
       {
         name: "Afe Babalola University",
-        image: lawal,
+        image: null,
         nomination: "Innovation & Technology Award",
       },
     ],
@@ -530,7 +561,7 @@ export const titles: nominees[] = [
       },
       {
         name: "Mr Funny a.k.a Sabinus",
-        image: lawal,
+        image: sabinus,
         nomination: "Skit maker of the year Award",
       },
     ],
@@ -542,12 +573,12 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Yomi Casual",
-        image: lawal,
+        image: yomicasual,
         nomination: "Fashion Designer of the Year Award",
       },
       {
         name: "Niddle and Stitches",
-        image: lawal,
+        image: nands,
         nomination: "Fashion Designer of the Year Award",
       },
       {
@@ -564,17 +595,17 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "GLO",
-        image: lawal,
+        image: null,
         nomination: "Cooperate Sponsor (Arts) of the Year Award",
       },
       {
         name: "MTN",
-        image: lawal,
+        image: null,
         nomination: "Cooperate Sponsor (Arts) of the Year Award",
       },
       {
         name: "Multi Choice",
-        image: lawal,
+        image: null,
         nomination: "Cooperate Sponsor (Arts) of the Year Award",
       },
     ],
@@ -586,12 +617,12 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Lagos Marriot",
-        image: lawal,
+        image: null,
         nomination: "Tourism Special Recognition Award",
       },
       {
         name: "Wakanow",
-        image: lawal,
+        image: wakanow,
         nomination: "Tourism Special Recognition Award",
       },
       {
@@ -613,12 +644,12 @@ export const titles: nominees[] = [
       },
       {
         name: "Philip Trimnell",
-        image: lawal,
+        image: philip,
         nomination: "Visual Arts Artiste of the year Award",
       },
       {
         name: "Peju Alatise",
-        image: lawal,
+        image: peju,
         nomination: "Visual Arts Artiste of the year Award",
       },
     ],
@@ -631,7 +662,7 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "DJ Neptune",
-        image: lawal,
+        image: neptune,
         nomination: "Golden Performance DJ of the year Award",
       },
       {
@@ -658,7 +689,7 @@ export const titles: nominees[] = [
       },
       {
         name: "Omah Lay",
-        image: lawal,
+        image: omahlay,
         nomination: "Song Writer of the year Award",
       },
       {
@@ -702,7 +733,7 @@ export const titles: nominees[] = [
       },
       {
         name: "Uju Okoli",
-        image: lawal,
+        image: uju,
         nomination: "Nollywood actor of the year Award (Female)",
       },
       {
@@ -719,7 +750,7 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Nedu",
-        image: lawal,
+        image: nedu,
         nomination: "Media personality special recognition Award",
       },
       {
@@ -773,7 +804,7 @@ export const titles: nominees[] = [
       },
       {
         name: "Nwaoha Chioma Blessing",
-        image: lawal,
+        image: nwoha,
         nomination: "Best Emerging Actor In Role Interpretation (Female) Award",
       },
     ],

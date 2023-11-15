@@ -304,6 +304,7 @@
   font-weight: 100;
 }
 .aboutaman {
+  margin-top: 30px;
   width: 100%;
   padding: 50px 60px;
   background-color: var(--brown2);

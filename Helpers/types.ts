@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 export type nomSingle = {
   name: string;
-  image: StaticImageData;
+  image: StaticImageData | null;
   nomination: string;
 };
 export type nominees = {
