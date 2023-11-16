@@ -13,6 +13,19 @@ import shaggi from "../public/images/Broda Shaggi.jpg";
 import chico from "../public/images/Chico.jpg";
 import osita from "../public/images/CHIEF OSITA OKUKOGWU.jpg";
 import monday from "../public/images/CHIEF SIR MONDAY JOHN ONYEME.jpg";
+import abuad from "../public/images/abuad.jpeg";
+import multichoice from "../public/images/multichoice.jpeg";
+import glo from "../public/images/glo.jpeg";
+import mtn from "../public/images/mtn.jpeg";
+import marriot from "../public/images/marriot.png";
+import deputy from "../public/images/deputy.webp";
+import ned from "../public/images/ned.jpeg";
+import alliance from "../public/images/alliance.png";
+import boi from "../public/images/boi.jpeg";
+import gtbank from "../public/images/gtbank.png";
+import access from "../public/images/access.png";
+import mavin from "../public/images/mavin.jpeg";
+import jonzing from "../public/images/jonzing.jpeg";
 import chinenye from "../public/images/Chinenye Nnebe.jpg";
 import nigga from "../public/images/David IfeanyiChukwu Abiodun Nwachukwu.jpg";
 import chizoba from "../public/images/Chizoba Nwokoye.jpg";
@@ -245,12 +258,12 @@ export const titles2: nominees[] = [
       },
       {
         name: "Jonzing World",
-        image: null,
+        image: jonzing,
         nomination: "AMAN Golden Global Impact Recognition Award",
       },
       {
         name: "Mavin Records",
-        image: null,
+        image: mavin,
         nomination: "AMAN Golden Global Impact Recognition Award",
       },
       {
@@ -343,17 +356,17 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Access Bank",
-        image: null,
+        image: access,
         nomination: "Creative Industry's Financier of the year Award",
       },
       {
         name: "GT Bank",
-        image: null,
+        image: gtbank,
         nomination: "Creative Industry's Financier of the year Award",
       },
       {
         name: "BOI",
-        image: null,
+        image: boi,
         nomination: "Creative Industry's Financier of the year Award",
       },
     ],
@@ -444,12 +457,12 @@ export const titles2: nominees[] = [
       },
       {
         name: "Sen Ned Nwoko",
-        image: null,
+        image: ned,
         nomination: "Humanitarian Special Recognition Award",
       },
       {
         name: "Deputy Governor Delta State",
-        image: null,
+        image: deputy,
         nomination: "Humanitarian Special Recognition Award",
       },
     ],
@@ -539,7 +552,7 @@ export const titles: nominees[] = [
       },
       {
         name: "Afe Babalola University",
-        image: null,
+        image: abuad,
         nomination: "Innovation & Technology Award",
       },
     ],
@@ -595,17 +608,17 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "GLO",
-        image: null,
+        image: glo,
         nomination: "Cooperate Sponsor (Arts) of the Year Award",
       },
       {
         name: "MTN",
-        image: null,
+        image: mtn,
         nomination: "Cooperate Sponsor (Arts) of the Year Award",
       },
       {
         name: "Multi Choice",
-        image: null,
+        image: multichoice,
         nomination: "Cooperate Sponsor (Arts) of the Year Award",
       },
     ],
@@ -617,7 +630,7 @@ export const titles: nominees[] = [
     nominees: [
       {
         name: "Lagos Marriot",
-        image: null,
+        image: marriot,
         nomination: "Tourism Special Recognition Award",
       },
       {
