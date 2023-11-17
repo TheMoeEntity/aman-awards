@@ -20,7 +20,7 @@ import mtn from "../public/images/mtn.jpeg";
 import marriot from "../public/images/marriot.png";
 import deputy from "../public/images/deputy.webp";
 import ned from "../public/images/ned.jpeg";
-import alliance from "../public/images/alliance.png";
+import sevenspeed from "../public/images/sevenspeed.jpg";
 import boi from "../public/images/boi.jpeg";
 import gtbank from "../public/images/gtbank.png";
 import access from "../public/images/access.png";
@@ -209,7 +209,7 @@ export const titles2: nominees[] = [
       },
       {
         name: "7speed",
-        image: null,
+        image: sevenspeed,
         nomination: "Artiste Manager of the year Award",
       },
       {
@@ -383,7 +383,7 @@ export const titles2: nominees[] = [
           "Bi Lateral Support/Collaboration Special Recognition Award",
       },
       {
-        name: "British Council",
+        name: "The Deputy High Commission Department of Business & Trade (DBT)",
         image: british,
         nomination:
           "Bi Lateral Support/Collaboration Special Recognition Award",
@@ -429,7 +429,7 @@ export const titles2: nominees[] = [
         nomination: "Lifetime Achievement Award",
       },
       {
-        name: "Favor Chuks",
+        name: "Favour Chuks",
         image: favor,
         nomination: "Lifetime Achievement Award",
       },
@@ -629,7 +629,7 @@ export const titles: nominees[] = [
     id: Math.random() * 10000,
     nominees: [
       {
-        name: "Lagos Marriot",
+        name: "Lagos Marriot Hotel",
         image: marriot,
         nomination: "Tourism Special Recognition Award",
       },
@@ -639,7 +639,7 @@ export const titles: nominees[] = [
         nomination: "Tourism Special Recognition Award",
       },
       {
-        name: "Ikogosi Waem Spring Resort",
+        name: "Ikogosi Warm Spring Resort",
         image: ikogosi,
         nomination: "Tourism Special Recognition Award",
       },
@@ -728,7 +728,7 @@ export const titles: nominees[] = [
         nomination: "Best Emerging Actor In Role Interpretation (Male) Award",
       },
       {
-        name: "042 Prince Jay",
+        name: "Prince Johnson Ogbu a.k.a 042princejay",
         image: _042,
         nomination: "Best Emerging Actor In Role Interpretation (Male) Award",
       },
@@ -784,7 +784,7 @@ export const titles: nominees[] = [
     id: Math.random() * 10000,
     nominees: [
       {
-        name: "Andrew Vibez",
+        name: "Andrewvibez",
         image: andreVibez,
         nomination: "Producer of the year Award",
       },
