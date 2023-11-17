@@ -12,7 +12,7 @@ import bimbo from "../public/images/Bimbo Ademoye.jpg";
 import shaggi from "../public/images/Broda Shaggi.jpg";
 import chico from "../public/images/Chico.jpg";
 import osita from "../public/images/CHIEF OSITA OKUKOGWU.jpg";
-import monday from "../public/images/CHIEF SIR MONDAY JOHN ONYEME.jpg";
+import david from "../public/images/david.jpeg";
 import abuad from "../public/images/abuad.jpeg";
 import multichoice from "../public/images/multichoice.jpeg";
 import glo from "../public/images/glo.jpeg";
@@ -842,7 +842,7 @@ export const amanGroup: amanGroupType[] = [
   {
     name: "David Nwachukwu",
     position: "AMAN Awards Committee - Chairman/AMAN, Project Director",
-    img: nigga,
+    img: david,
     maxWidth: 1000,
   },
   {
