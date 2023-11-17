@@ -630,7 +630,7 @@ export const titles: nominees[] = [
     id: Math.random() * 10000,
     nominees: [
       {
-        name: "Lagos Marriot Hotel",
+        name: "Lagos Marriott Hotel",
         image: marriot,
         nomination: "Tourism Special Recognition Award",
       },
