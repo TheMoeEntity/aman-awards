@@ -17,7 +17,8 @@ import abuad from "../public/images/abuad.jpeg";
 import multichoice from "../public/images/multichoice.jpeg";
 import glo from "../public/images/glo.jpeg";
 import mtn from "../public/images/mtn.jpeg";
-import marriot from "../public/images/marriot.png";
+import marriot from "../public/images/lagmariot.jpg";
+import lrhay from "../public/images/lrhay.jpg";
 import deputy from "../public/images/deputy.webp";
 import ned from "../public/images/ned.jpeg";
 import sevenspeed from "../public/images/sevenspeed.jpg";
@@ -27,7 +28,7 @@ import access from "../public/images/access.png";
 import mavin from "../public/images/mavin.jpeg";
 import jonzing from "../public/images/jonzing.jpeg";
 import chinenye from "../public/images/Chinenye Nnebe.jpg";
-import nigga from "../public/images/David IfeanyiChukwu Abiodun Nwachukwu.jpg";
+import alliance from "../public/images/alliancefr.jpg";
 import chizoba from "../public/images/Chizoba Nwokoye.jpg";
 import freeze from "../public/images/Daddy Freeze.jpg";
 import djbign from "../public/images/DJ Big N.jpg";
@@ -74,7 +75,7 @@ import peju from "../public/images/PEJU ALATISE.jpg";
 import philip from "../public/images/PHILIP TRIMNELL.jpg";
 import pretty from "../public/images/Pretty Okafor.jpg";
 import rayne from "../public/images/Rayne.png";
-import rema from "../public/images/REMA.jpg";
+import rema from "../public/images/rema2.jpg";
 import Ruger from "../public/images/Ruger.jpg";
 import sabinus from "../public/images/Sabinus.jpg";
 import sean from "../public/images/Sean Okeke.jpg";
@@ -378,7 +379,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Alliance Francais",
-        image: null,
+        image: alliance,
         nomination:
           "Bi Lateral Support/Collaboration Special Recognition Award",
       },
@@ -425,7 +426,7 @@ export const titles2: nominees[] = [
     nominees: [
       {
         name: "Irhay",
-        image: null,
+        image: lrhay,
         nomination: "Lifetime Achievement Award",
       },
       {
