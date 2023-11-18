@@ -827,7 +827,7 @@ export const titles: nominees[] = [
 
 export const amanGroup2: amanGroupType[] = [
   {
-    name: "Walliyah Abiola",
+    name: "Waliyah Abiola",
     position: "Marketing, Fund Raising & Public Relations.",
     img: waaliyah,
     maxWidth: 1000,
