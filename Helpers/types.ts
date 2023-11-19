@@ -10,6 +10,10 @@ export type nominees = {
   id: number;
   nominees: nomSingle[];
 };
+export type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 export type execType = {
   name: string;
   position: string;
