@@ -9,7 +9,8 @@ const Latest = ({ data }: any) => {
   const router = useRouter();
   return (
     <div className={styles.latest}>
-      <h2>LATEST NEWS</h2>
+      {data.length > 0 && <h2>LATEST NEWS</h2>}
+
       <div className={styles.grid}>
         {(data as blogType[]).map((x, i) => (
           <div onClick={() => router.push("/posts/" + x.slug)} key={i}>
