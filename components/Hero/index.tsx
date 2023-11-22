@@ -7,6 +7,9 @@ const Hero = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.overlay}></div>
+      {/* <video autoPlay loop muted playsInline className={styles.backVideo}>
+        <source src="/videos/aman.mp4" type="video/mp4" />
+      </video> */}
       <Image
         src={icon2}
         alt="card-image"

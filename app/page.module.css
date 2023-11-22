@@ -266,18 +266,21 @@
   max-width: 316px;
 }
 .timer {
-  width: fit-content;
-  height: 200px;
-  z-index: 10000000;
-  background-image: url("/images/bg.png");
-  background-size: cover;
-  background-position: center;
+  width: 848px;
+  max-width: 100%;
+  height: 480px;
   margin: 0px auto;
-  display: flex;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   margin-bottom: 60px;
+}
+.backVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* object-fit: cover; */
+  width: 100%;
+  z-index: 1;
 }
 .nomCards > div .img {
   width: 100%;
@@ -644,7 +647,10 @@
     justify-content: center;
     flex-flow: column wrap;
   } */
-
+  .timer {
+    width: calc(0.6 * 848px);
+    height: calc(0.6 * 480px);
+  }
   .latest .amangrid {
     height: fit-content;
     flex: 35%;

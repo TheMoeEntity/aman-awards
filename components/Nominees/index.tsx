@@ -41,9 +41,11 @@ const Nominees = () => {
   };
   return (
     <div className={styles.nominees}>
-      {/* <div className={styles.timer}>
-        <Timer />
-      </div> */}
+      <div className={styles.timer}>
+        <video autoPlay loop muted playsInline className={styles.backVideo}>
+          <source src="/videos/aman.mp4" type="video/mp4" />
+        </video>
+      </div>
 
       <h2>Award Categories</h2>
       <div className={styles.bar}>
