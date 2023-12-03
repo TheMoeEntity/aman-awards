@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import styles from "../../app/page.module.css";
 import concert from "../../public/images/aman-logo.png";
 import coming from "../../public/images/coming2.jpeg";
+import winner from "../../public/images/winner.png";
 
 import { nominees, nomSingle } from "@/Helpers/types";
 
@@ -82,8 +83,33 @@ const Nominees = () => {
               />
             </div>
             <div className={styles.details}>
-              <b>{x.name}</b>
+              <b
+                style={{
+                  color: x.isWinner && x.isWinner == true ? "red" : "black",
+                }}
+                className={
+                  x.isWinner && x.isWinner == true ? styles.beatClass : ""
+                }
+              >
+                {x.name}
+              </b>
               <div>{x.nomination}</div>
+              {x.isWinner && x.isWinner == true && (
+                <div className={styles.winnerBadge}>
+                  <Image
+                    style={{ objectFit: "contain" }}
+                    src={winner}
+                    alt="winner badge"
+                    fill={true}
+                    blurDataURL={
+                      "https://dri.es/files/images/blog/lazy-loading-images-placeholder-1.jpg"
+                    }
+                    quality={100}
+                    priority={true}
+                    sizes="(max-width: 370px) 100vw, (max-width: 100%) 50vw, 33vw"
+                  />
+                </div>
+              )}
             </div>
           </div>
         ))}

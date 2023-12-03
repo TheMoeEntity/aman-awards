@@ -3,6 +3,7 @@ export type nomSingle = {
   name: string;
   image: StaticImageData | null;
   nomination: string;
+  isWinner?: boolean;
 };
 export type nominees = {
   title: string;

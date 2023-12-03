@@ -544,6 +544,7 @@ export const titles: nominees[] = [
       {
         name: "Julius Rone",
         image: rone,
+        // isWinner: true,
         nomination: "Innovation & Technology Award",
       },
       {
